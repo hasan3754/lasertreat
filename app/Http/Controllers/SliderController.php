@@ -65,10 +65,17 @@ class SliderController extends Controller
     public function show()
     {
         $glider = slider::orderBy('id', 'ASC')->first();
+        if($glider!=null){
         $glider->active='active';
         $glider->save();
         $slider = slider::all();
-        return view('welcome',['slider'=>$slider]);
+        return view('welcome',['slider'=>$slider]); 
+        }
+        else{
+            $slider='no slider';
+           return view('welcome',['slider'=>$slider]);;
+        }
+
     }
 
 }

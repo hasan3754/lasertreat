@@ -28,40 +28,40 @@
                 </button>
         <div class="collapse navbar-collapse" id="navbarSupportedContent-3">
 		  <ul class="navbar-nav linta piniksa">
-            <li class="nav-item  ">
-              <a class="nav-link only cc" href="#"><span>ABOUT US</span>
+            <li class="nav-item  text-center vf">
+              <a class="nav-link only cb text-nowrap" href="#"><span>ABOUT US</span>
               </a>
             </li>
-            <li class="nav-item">
-              <a class="nav-link only ab " href="#"><span>AESTHETIC</span></a>
+            <li class="nav-item text-center vf">
+              <a class="nav-link only cb text-nowrap " href="#"><span>AESTHETIC</span></a>
             </li>
-            			<li class="nav-item">
-              <a class="nav-link only bb" href="#"><span>ANTI-AGING</span></a>
+            			<li class="nav-item text-center vf">
+              <a class="nav-link only cb text-nowrap vrf" href="#"><span>ANTI-AGING</span></a>
             </li>
-                        <li class="nav-item">
-              <a class="nav-link only cb " href="#"><span>BODY SHAPING</span></a>
+                        <li class="nav-item text-center vf">
+              <a class="nav-link onlyone cb text-nowrap" href="#"><span>BODY SHAPING</span></a>
             </li>
-            <li class="nav-item">
-              <a class="nav-link only db " href="#"><span>DERMATOLOGY</span></a>
+            <li class="nav-item text-center vf ghk">
+              <a class="nav-link onlytwo cb text-nowrap" href="#"><span>DERMATOLOGY</span></a>
             </li>
-            <li class="nav-item">
-              <a class="nav-link only eb " href="#"><span>SEXOLOGY</span></a>
+            <li class="nav-item text-center vf">
+              <a class="nav-link only cb text-nowrap lkp" href="#"><span>SEXOLOGY</span></a>
             </li>
-			<li class="nav-item">
-              <a class="nav-link only fb" href="#"><span>DHI</span></a>
+			<li class="nav-item text-center vf">
+              <a class="nav-link only cb text-nowrap" href="#"><span>DHI</span></a>
             </li>
 
-						<li class="nav-item">
-              <a class="nav-link only gb " href="#"><span>DDI</span></a>
+						<li class="nav-item text-center vf pol">
+              <a class="nav-link only cb text-nowrap" href="#"><span>DDI</span></a>
             </li>
-            						<li class="nav-item">
-              <a class="nav-link only gb " href="#"><span>VIDEO GALLERY</span></a>
+            						<li class="nav-item text-center vf lpn">
+              <a class="nav-link onlythree cb text-nowrap" href="#"><span>VIDEO GALLERY</span></a>
             </li>
-            						<li class="nav-item">
-              <a class="nav-link only gb " href="#"><span>BLOG</span></a>
+            						<li class="nav-item text-center vf lpd">
+              <a class="nav-link only cb text-nowrap" href="#"><span>BLOG</span></a>
             </li>
-            						<li class="nav-item">
-              <a class="nav-link only gb " href="#"><span>CONTACT US</span></a>
+            						<li class="nav-item text-center vf lpn ">
+              <a class="nav-link onlyfour cb text-nowrap npkj" href="#"><span>CONTACT US</span></a>
             </li>
 
           </ul>
@@ -100,6 +100,7 @@
 <div class="containerr">
 
   <div class="slideshow">  
+  @if($slider!='no slider')
   @foreach ($slider as $key => $slider)
     <div class="slide {{$slider->active}}">
       <img src="{{ 'uploads/slider/'.$slider->image }}" alt="New York City" title="New York City" />
@@ -107,6 +108,8 @@
       
     </div>
    @endforeach
+   
+   @endif
   </div>
 
 
@@ -182,9 +185,9 @@
       <div class="card car vir">
       <div class="" onclick="">
 
-      <img class="card-img-top ca img-fluid pini" src="http://www.ophthalmichospital.com/image1.jpg" alt="Card image cap">
+      <img class="card-img-top ca img-fluid pini" src="image1.jpg" alt="Card image cap">
       <div class="card-block child">
-        <h4 class="card-title tiup foup pin liton nin pil">LOS ANGELES</h4>
+        <h4 class="card-title tiup foup pin liton nin pil cpl">LOS ANGELES</h4>
         <p class="card-text tiup nomi pin mrtn">Laser treat is the only "ISO 9000 2008" certified BEUTICINOLOGY clinic in bangladesh<br><br><br><br><br></p>
       </div>
       </div>
@@ -196,9 +199,9 @@
     <div class="col-xs-12 col-md-6 col-4 col-lg-3 mar parent">
       <div class="card car vir">
                 <div class="" onclick="">
-      <img class="card-img-top trin cab img-fluid pini quack" src="http://www.ophthalmichospital.com/2.jpg" alt="Card image cap">
+      <img class="card-img-top trin cab img-fluid pini quack" src="2.jpg" alt="Card image cap" id="new">
       <div class="card-block child">
-        <h4 class="card-title miup foup pin fin nin ">DR. SARKER MAHBUB AHMED SHAMIM</h4>
+        <h4 class="card-title miup foup pin fin nin cpl">DR. SARKER MAHBUB AHMED SHAMIM</h4>
         <p class="card-text miup dipn pin mrtn">MBBS dip. derm(glasgow,uk) diploma in aesthetic medicine(USA),MCPS,FCPS(Dermatology) skin,sex and antiaging specialist,Laser,Hair transplant & Cosmetic Surgeon<br></p>
         </div>
         </div>
@@ -210,9 +213,9 @@
     <div class="col-xs-12 col-md-6 col-4 col-lg-3 mar parent">
       <div class="card car vir">
       <div class="" onclick="">
-      <img class="card-img-top carb img-fluid pini" src="http://www.ophthalmichospital.com/3.jpg" alt="Card image cap">
+      <img class="card-img-top carb img-fluid pini" src="3.jpg" alt="Card image cap">
       <div class="card-block child">
-        <h4 class="card-title biup foup pin nin pil">DUBAI</h4>
+        <h4 class="card-title biup foup pin nin pil cpl">DUBAI</h4>
         <p class="card-text diup pin mrtn">Laser treat is the only "ISO 9000 2008" certified BEUTICINOLOGY clinic in bangladesh<br><br><br><br><br></p>
         </div>
         </div>
@@ -251,11 +254,11 @@
                   </div>
                  
                  
-                 <div class="card__reveal card__reveal--up xlz">    
+                 <div class="card__reveal card__reveal--up xlz poi">    
                <a href="http://www.ophthalmichospital.com/dd.jpg" class="fancylight popup-btn" data-fancybox-group="light"> 
                <img class="img-fluid" src="http://www.ophthalmichospital.com/dd.jpg" alt="">
                </a>
-                  <div class="centered"><b><p class="t tn kinh">BOTOXÀ®</p></b>                <br><br>  <img  class="img-fluid centered noli binh" style="display: none" src="http://www.ophthalmichospital.com/arrio.png" alt=""></div>
+                  <div class="centered"><b><p class="t tn kinh nl">BOTOXÀ®</p></b>                <br><br>  <img  class="img-fluid centered noli binh" style="display: none" src="http://www.ophthalmichospital.com/arrio.png" alt=""></div>
                   </div>
 
                   
@@ -277,11 +280,11 @@
                </a>
                                   <div class="centered"><p class="t">FRACTIONAL<br>LASER CO2</p></div>
             </div>
-                <div class="card__reveal card__reveal--up xlz">    
+                <div class="card__reveal card__reveal--up xlz poi">    
                <a href="http://www.ophthalmichospital.com/dd.jpg" class="fancylight popup-btn" data-fancybox-group="light"> 
                <img class="img-fluid" src="http://www.ophthalmichospital.com/dd.jpg" alt="">
                </a>
-                  <div class="centered"><b><p class="t kinh">FRACTIONAL<br>LASER CO2</p></b>                <br><br>  <img  class="img-fluid centered noli binh"  src="http://www.ophthalmichospital.com/arrio.png" alt=""></div>
+                  <div class="centered"><b><p class="t kinh nl">FRACTIONAL<br>LASER CO2</p></b>                <br><br>  <img  class="img-fluid centered noli binh"  src="http://www.ophthalmichospital.com/arrio.png" alt=""></div>
                   </div>
             
             
@@ -306,7 +309,7 @@
                <a href="http://www.ophthalmichospital.com/dd.jpg" class="fancylight popup-btn" data-fancybox-group="light"> 
                <img class="img-fluid" src="http://www.ophthalmichospital.com/dd.jpg" alt="">
                </a>
-                  <div class="centered"><b><p class="t kinh">PRP BY ECLIPSE</p></b>                <br><br>  <img  class="img-fluid centered noli binh"  src="http://www.ophthalmichospital.com/arrio.png" alt=""></div>
+                  <div class="centered"><b><p class="t kinh nl">PRP BY ECLIPSE</p></b>                <br><br>  <img  class="img-fluid centered noli binh"  src="http://www.ophthalmichospital.com/arrio.png" alt=""></div>
                   </div>
             </div>
             
@@ -335,7 +338,7 @@
                <a href="http://www.ophthalmichospital.com/dd.jpg" class="fancylight popup-btn" data-fancybox-group="light"> 
                <img class="img-fluid" src="http://www.ophthalmichospital.com/dd.jpg" alt="">
                </a>
-                  <div class="centered"><b><p class="t tn kinh">BODY SHAPING,<br>
+                  <div class="centered"><b><p class="t tn kinh nl">BODY SHAPING,<br>
   BY ZERONAÀ®</p></b>                <br><br>  <img  class="img-fluid centered noli binh"  src="http://www.ophthalmichospital.com/arrio.png" alt=""></div>
                   </div>
             </div>
@@ -375,9 +378,9 @@
     <div class="col-xs-12 col-md-6 col-lg-3 col-4 parent">
       <div class="card car cari">
          <div class=""> 
-      <img class="card-img-top trinnn carbo" src="http://www.ophthalmichospital.com/2.jpg" height="355" width="330" alt="Card image cap">
+      <img class="card-img-top trinnn carbo " src="2.jpg" height="355" width="330" alt="Card image cap">
       <div class="card-block child">
-        <h4 class="card-title  minto likin">DR. SARKER MAHBUB AHMED SHAMIM</h4>
+        <h4 class="card-title  minto likin vn">DR. SARKER MAHBUB AHMED SHAMIM</h4>
         <hr>
   <p class="card-text nini">Chief consultant of Laser treat<p class="ni">MBBS dip. derm(glasgow,uk) diploma in aesthetic medicine(USA),MCPS,FCPS(Dermatology) skin,sex and antiaging specialist,Laser,Hair transplant & Cosmetic Surgeon<br><br></p></p>
         <p class="lot bini">.</p>
@@ -387,9 +390,9 @@
     <div class="col-xs-12 col-md-6 col-lg-3 col-4 parent">
       <div class="card car cari">
     <div class="">      
-      <img class="card-img-top ulu carbon" src="http://www.ophthalmichospital.com/are.jpg" height="355" width="330"  alt="Card image cap">
+      <img class="card-img-top ulu carbon " src="are.jpg" height="355" width="330"  alt="Card image cap">
        <div class="card-block child">
-        <h4 class="card-title  minto liki">DR. RABEA AFROZ SHOMA</h4>
+        <h4 class="card-title  minto liki vn">DR. RABEA AFROZ SHOMA</h4>
         <hr>
   <p class="card-text nini">Junior consultant of Laser treat<p class="ni mi">Advanced training<br>American academy of aesthetic medicine(USA),Advanced training(Aesthetic Dermatology) Aesthetic dermatologist and laser specialist<br><br></p></p>
         <p class="lot got bini">.</p>
@@ -399,9 +402,9 @@
     <div class="col-xs-12 col-md-6 col-lg-3 col-4 parent">
       <div class="card car cari bold">
           <div class="">
-      <img class="card-img-top ulu nocar" src="http://www.ophthalmichospital.com/three.jpg" height="355" width="330"  alt="Card image cap">
+      <img class="card-img-top ulu nocar " src="three.jpg" height="355" width="330"  alt="Card image cap">
       <div class="card-block child">
-        <h4 class="card-title  minto liki">DR. FARHANA RASHID SHUMI</h4>
+        <h4 class="card-title  minto liki vn">DR. FARHANA RASHID SHUMI</h4>
         <hr>
   <p class="card-text nini">Junior consultant of Laser treat<br><p class="ni mi">Advanced training<br>American academy of aesthetic medicine(USA),Advanced training(Aesthetic Dermatology) Aesthetic dermatologist and laser specialist<br><br></p></p>
         <p class="lot got bini">.</p>
@@ -441,7 +444,7 @@
                <a href="http://www.ophthalmichospital.com/dd.jpg" class="fancylight popup-btn" data-fancybox-group="light"> 
                <img class="img-fluid" src="http://www.ophthalmichospital.com/dd.jpg" alt="">
                </a>
-                  <div class="centered"><b><p class="t tn kinh">INFO</p></b>                <br><br>  <img  class="img-fluid centered noli binh"  src="http://www.ophthalmichospital.com/arrio.png" alt=""></div>
+                  <div class="centered"><b><p class="t tn kinh nl">INFO</p></b>                <br><br>  <img  class="img-fluid centered noli binh"  src="http://www.ophthalmichospital.com/arrio.png" alt=""></div>
                   </div>
             
             
@@ -468,11 +471,11 @@
                </a>
                                   <div class="centered"><p class="t">INFO</p></div>
             </div>
-                           <div class="card__reveal card__reveal--up xlz">    
+                           <div class="card__reveal card__reveal--up xlz poi">    
                <a href="http://www.ophthalmichospital.com/dd.jpg" class="fancylight popup-btn" data-fancybox-group="light"> 
                <img class="img-fluid" src="http://www.ophthalmichospital.com/dd.jpg" alt="">
                </a>
-                  <div class="centered"><b><p class="t tn kinh">INFO</p></b>                <br><br>  <img  class="img-fluid centered noli binh"  src="http://www.ophthalmichospital.com/arrio.png" alt=""></div>
+                  <div class="centered"><b><p class="t tn kinh nl">INFO</p></b>                <br><br>  <img  class="img-fluid centered noli binh"  src="http://www.ophthalmichospital.com/arrio.png" alt=""></div>
                   </div>
             
             
@@ -489,11 +492,11 @@
                 <div class="centered"><p class="t">INFO</p></div>
                  
             </div>
-                           <div class="card__reveal card__reveal--up xlz">    
+                           <div class="card__reveal card__reveal--up xlz poi">    
                <a href="http://www.ophthalmichospital.com/dd.jpg" class="fancylight popup-btn" data-fancybox-group="light"> 
                <img class="img-fluid" src="http://www.ophthalmichospital.com/dd.jpg" alt="">
                </a>
-                  <div class="centered"><b><p class="t tn kinh">INFO</p></b>                <br><br>  <img  class="img-fluid centered noli binh"  src="http://www.ophthalmichospital.com/arrio.png" alt=""></div>
+                  <div class="centered"><b><p class="t tn kinh nl">INFO</p></b>                <br><br>  <img  class="img-fluid centered noli binh"  src="http://www.ophthalmichospital.com/arrio.png" alt=""></div>
                   </div>
             
             </div></div>
@@ -514,11 +517,11 @@
                </a>
                 <div class="centered"><p class="t">INFO</p></div>
             </div>
-        <div class="card__reveal card__reveal--up xlz">    
+        <div class="card__reveal card__reveal--up xlz poi">    
                <a href="http://www.ophthalmichospital.com/dd.jpg" class="fancylight popup-btn" data-fancybox-group="light"> 
                <img class="img-fluid" src="http://www.ophthalmichospital.com/dd.jpg" alt="">
                </a>
-                  <div class="centered"><b><p class="t tn kinh">INFO</p></b>                <br><br>  <img  class="img-fluid centered noli binh"  src="http://www.ophthalmichospital.com/arrio.png" alt=""></div>
+                  <div class="centered"><b><p class="t tn kinh nl">INFO</p></b>                <br><br>  <img  class="img-fluid centered noli binh"  src="http://www.ophthalmichospital.com/arrio.png" alt=""></div>
                   </div>
             
             
@@ -590,7 +593,7 @@
   <div class="marin">  
    <div class="row">
     <div class="col l text-left sorabo bpl">
-      <img class="logoi" src="http://www.ophthalmichospital.com/logoi.jpg">
+      <img class="logoi" src="logoi.jpg">
     </div>
     <div class="col l">
       <br>
@@ -604,7 +607,7 @@
      .
     </div>
     <div class="col l text-right bili">
-       <a href="https://www.w3schools.com"><img class="gigi" src="http://www.ophthalmichospital.com/socialimage.jpg"></a>
+       <a href="https://www.w3schools.com"><img class="gigi" src="socialimage.jpg"></a>
     </div>
   </div>
     <div class="row bgdibo">
@@ -632,13 +635,13 @@
 </div>
 <div class="row sadaa ase">
      
-      <img class="bow" src="http://www.ophthalmichospital.com/logoi.jpg">
+      <img class="bow" src="logoi.jpg">
       <div class="row">
          <div class="col-6 fdiboni">
      <b  style="color:#9BA1A7;font-family:robotobold;font-size:17px;"> HELPLINE:</b><b  style="color:#9BA1A7;font-family:robotobold;font-size:23px;">+88 09678 006 007</b>
     </div>
         <div class="col-6 text-right">
-       <a href="https://www.w3schools.com"><img class="gigi" src="http://www.ophthalmichospital.com/picicon.jpg"></a>
+       <a href="https://www.w3schools.com"><img class="gigi" src="picicon.jpg"></a>
     </div>
     </div>
     <div class="row gbvcx">
@@ -663,6 +666,10 @@
 
     
 </div>    
+
+<div class="row bgl">
+.
+</div>
 
 
 <footer class="page-footer font-small">

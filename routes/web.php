@@ -21,6 +21,10 @@ Route::get('/dashboard', function () {
     return view('dashboard');
 });
 
+Route::get('/conference', function () {
+    return view('conference');
+});
+
 Route::post('/store','SliderController@store')->name('slider.store');
 
 Route::get('/delete/{id}','SliderController@delete')->name('slider.delete');
@@ -33,3 +37,9 @@ Route::get('/table', function () {
     $slider = slider::all();
     return view('table', compact('slider'));
 })->name('table');
+
+
+
+Route::post('/storeone','conferenceController@storeone')->name('conference.storeone');
+Route::post('/storetwo','conferenceController@storetwo')->name('conference.storetwo');
+Route::post('/storethree','conferenceController@storethree')->name('conference.storethree');

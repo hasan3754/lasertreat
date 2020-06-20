@@ -185,7 +185,7 @@
       <div class="card car vir">
       <div class="" onclick="">
 
-      <img class="card-img-top ca img-fluid pini" src="image1.jpg" alt="Card image cap">
+      <img class="card-img-top ca img-fluid pini" src="http://www.ophthalmichospital.com/image1.jpg" alt="Card image cap">
       <div class="card-block child">
         <h4 class="card-title tiup foup pin liton nin pil cpl">LOS ANGELES</h4>
         <p class="card-text tiup nomi pin mrtn">Laser treat is the only "ISO 9000 2008" certified BEUTICINOLOGY clinic in bangladesh<br><br><br><br><br></p>
@@ -199,7 +199,7 @@
     <div class="col-xs-12 col-md-6 col-4 col-lg-3 mar parent">
       <div class="card car vir">
                 <div class="" onclick="">
-      <img class="card-img-top trin cab img-fluid pini quack" src="2.jpg" alt="Card image cap" id="new">
+      <img class="card-img-top trin cab img-fluid pini quack" src="http://www.ophthalmichospital.com/2.jpg" alt="Card image cap" id="new">
       <div class="card-block child">
         <h4 class="card-title miup foup pin fin nin cpl">DR. SARKER MAHBUB AHMED SHAMIM</h4>
         <p class="card-text miup dipn pin mrtn">MBBS dip. derm(glasgow,uk) diploma in aesthetic medicine(USA),MCPS,FCPS(Dermatology) skin,sex and antiaging specialist,Laser,Hair transplant & Cosmetic Surgeon<br></p>
@@ -213,7 +213,7 @@
     <div class="col-xs-12 col-md-6 col-4 col-lg-3 mar parent">
       <div class="card car vir">
       <div class="" onclick="">
-      <img class="card-img-top carb img-fluid pini" src="3.jpg" alt="Card image cap">
+      <img class="card-img-top carb img-fluid pini" src="http://www.ophthalmichospital.com/3.jpg" alt="Card image cap">
       <div class="card-block child">
         <h4 class="card-title biup foup pin nin pil cpl">DUBAI</h4>
         <p class="card-text diup pin mrtn">Laser treat is the only "ISO 9000 2008" certified BEUTICINOLOGY clinic in bangladesh<br><br><br><br><br></p>
@@ -378,7 +378,7 @@
     <div class="col-xs-12 col-md-6 col-lg-3 col-4 parent">
       <div class="card car cari">
          <div class=""> 
-      <img class="card-img-top trinnn carbo " src="2.jpg" height="355" width="330" alt="Card image cap">
+      <img class="card-img-top trinnn carbo " src="http://www.ophthalmichospital.com/2.jpg" height="355" width="330" alt="Card image cap">
       <div class="card-block child">
         <h4 class="card-title  minto likin vn">DR. SARKER MAHBUB AHMED SHAMIM</h4>
         <hr>
@@ -390,7 +390,7 @@
     <div class="col-xs-12 col-md-6 col-lg-3 col-4 parent">
       <div class="card car cari">
     <div class="">      
-      <img class="card-img-top ulu carbon " src="are.jpg" height="355" width="330"  alt="Card image cap">
+      <img class="card-img-top ulu carbon " src="http://www.ophthalmichospital.com/are.jpg" height="355" width="330"  alt="Card image cap">
        <div class="card-block child">
         <h4 class="card-title  minto liki vn">DR. RABEA AFROZ SHOMA</h4>
         <hr>
@@ -402,7 +402,7 @@
     <div class="col-xs-12 col-md-6 col-lg-3 col-4 parent">
       <div class="card car cari bold">
           <div class="">
-      <img class="card-img-top ulu nocar " src="three.jpg" height="355" width="330"  alt="Card image cap">
+      <img class="card-img-top ulu nocar " src="http://www.ophthalmichospital.com/three.jpg" height="355" width="330"  alt="Card image cap">
       <div class="card-block child">
         <h4 class="card-title  minto liki vn">DR. FARHANA RASHID SHUMI</h4>
         <hr>

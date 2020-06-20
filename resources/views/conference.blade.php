@@ -164,20 +164,76 @@
             <!-- End Navbar -->
             <div class="content">
                 <div class="container-fluid">
-                <a href="{{ route('table') }}" class="btn btn-primary">show all sliders</a>
-                <form method="post" action="{{ route('slider.store') }}" enctype="multipart/form-data">
+                <h3 >Conference card one</h3>
+                <form method="post" action="{{ route('conference.storeone') }}" enctype="multipart/form-data">
                        @csrf
                     <div class="form-group">
-                        <label for="exampleInputEmail1">Slider name</label>
-                        <input type="text" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" name="SliderName">
+                        <label for="exampleInputEmail1">card  title</label>
+                        <input type="text" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" name="titleone">
+                        
+                    </div>
+                    <div class="form-group">
+                        <label for="exampleInputEmail1">card  paragraph</label>
+                        <input type="text" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" name="paragraphone">
                         
                     </div>
                      <div class="form-group">
                         <label for="exampleFormControlFile1">Upload slider image</label>
-                        <input type="file" class="form-control-file" id="exampleFormControlFile1" name="image">
+                        <input type="file" class="form-control-file" id="exampleFormControlFile1" name="imageone">
                     </div>
                     <button type="submit" class="btn btn-primary">Submit</button>
                     </form>
+
+
+             </div>  
+
+             <div class="container-fluid">
+             <h3 >Conference card two</h3>
+                <form method="post" action="{{ route('conference.storetwo') }}" enctype="multipart/form-data">
+                       @csrf
+                       <div class="form-group">
+                        <label for="exampleInputEmail1">card  title</label>
+                        <input type="text" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" name="titletwo">
+                        
+                    </div>
+                    <div class="form-group">
+                        <label for="exampleInputEmail1">card  paragraph</label>
+                        <input type="text" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" name="paragraphtwo">
+                        
+                    </div>
+                     <div class="form-group">
+                        <label for="exampleFormControlFile1">Upload slider image</label>
+                        <input type="file" class="form-control-file" id="exampleFormControlFile1" name="imagetwo">
+                    </div>
+                    <button type="submit" class="btn btn-primary">Submit</button>
+                    </form>
+
+
+             </div>  
+             <div class="container-fluid">
+             <h3 >Conference card three</h3>
+                <form method="post" action="{{ route('conference.storethree') }}" enctype="multipart/form-data">
+                       @csrf
+                       <div class="form-group">
+                        <label for="exampleInputEmail1">card  title</label>
+                        <input type="text" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" name="titlethree">
+                        
+                    </div>
+                    <div class="form-group">
+                        <label for="exampleInputEmail1">card  paragraph</label>
+                        <input type="text" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" name="paragraphthree">
+                        
+                    </div>
+                     <div class="form-group">
+                        <label for="exampleFormControlFile1">Upload slider image</label>
+                        <input type="file" class="form-control-file" id="exampleFormControlFile1" name="imagethree">
+                    </div>
+                    <button type="submit" class="btn btn-primary">Submit</button>
+                    </form>
+
+
+             </div>  
+             </div>    
             <footer class="footer">
                 <div class="container-fluid">
                     <nav>

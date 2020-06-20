@@ -1,14 +1,14 @@
 <?php
 
 namespace App\Http\Controllers;
-use App\conone;
-use App\contwo;
-use App\conthree;
-use Carbon\Carbon;
 
 use Illuminate\Http\Request;
+use App\speone;
+use App\spetwo;
+use App\spethree;
+use Carbon\Carbon;
 
-class conferenceController extends Controller
+class specialistController extends Controller
 {
     public function storeone(Request $request)
     {
@@ -32,7 +32,7 @@ class conferenceController extends Controller
             $imagename = 'dafault.png';
         }
 
-        $slider = new conone();
+        $slider = new speone();
         $slider->title = $request->titleone;
         $slider->paragraph = $request->paragraphone;
         $slider->image = $imagename;
@@ -67,7 +67,7 @@ class conferenceController extends Controller
             $imagename = 'dafault.png';
         }
 
-        $slider = new contwo();
+        $slider = new spetwo();
         $slider->title = $request->titletwo;
         $slider->paragraph = $request->paragraphtwo;
         $slider->image = $imagename;
@@ -89,7 +89,7 @@ class conferenceController extends Controller
             'imagethree' => 'required|mimes:jpeg,jpg,bmp,png',
         ]);
         $image = $request->file('imagethree');
-        $slug = str_slug($request->titlethree);
+        $slug = str_slug($request->titletwo);
         if (isset($image))
         {
             $currentDate = Carbon::now()->toDateString();
@@ -103,11 +103,12 @@ class conferenceController extends Controller
             $imagename = 'dafault.png';
         }
 
-        $slider = new conthree();
+        $slider = new spethree();
         $slider->title = $request->titlethree;
         $slider->paragraph = $request->paragraphthree;
         $slider->image = $imagename;
         $slider->save();
 
     }
+
 }

@@ -43,3 +43,13 @@ Route::get('/table', function () {
 Route::post('/storeone','conferenceController@storeone')->name('conference.storeone');
 Route::post('/storetwo','conferenceController@storetwo')->name('conference.storetwo');
 Route::post('/storethree','conferenceController@storethree')->name('conference.storethree');
+
+
+
+
+Route::get('/specialist', function () {
+    return view('specialist');
+});
+Route::post('/storeonesp','specialistController@storeone')->name('specialist.storeone');
+Route::post('/storetwosp','specialistController@storetwo')->name('specialist.storetwo');
+Route::post('/storethreesp','specialistController@storethree')->name('specialist.storethree');

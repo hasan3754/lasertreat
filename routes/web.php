@@ -53,3 +53,18 @@ Route::get('/specialist', function () {
 Route::post('/storeonesp','specialistController@storeone')->name('specialist.storeone');
 Route::post('/storetwosp','specialistController@storetwo')->name('specialist.storetwo');
 Route::post('/storethreesp','specialistController@storethree')->name('specialist.storethree');
+
+
+
+
+Route::post('/storeonetr','treatmentController@storeone')->name('treatment.storeone');
+Route::post('/storetwotr','treatmentController@storetwo')->name('treatment.storetwo');
+
+
+Route::get('/treatments', function () {
+    return view('treatments');
+});
+Route::post('/storefourtr','treatmentController@storefour')->name('treatment.storefour');
+
+
+Route::post('/storethreetr','treatmentController@storethreee')->name('treatment.storethreee');

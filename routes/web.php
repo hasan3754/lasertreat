@@ -68,3 +68,17 @@ Route::post('/storefourtr','treatmentController@storefour')->name('treatment.sto
 
 
 Route::post('/storethreetr','treatmentController@storethreee')->name('treatment.storethreee');
+
+
+
+Route::post('/storeoneequi','equipmentController@storeone')->name('equipment.storeone');
+Route::post('/storetwoequi','equipmentController@storetwo')->name('equipment.storetwo');
+
+
+Route::get('/equipments', function () {
+    return view('equipments');
+});
+Route::post('/storefourequi','equipmentController@storefour')->name('equipment.storefour');
+
+
+Route::post('/storethreeequi','equipmentController@storethreee')->name('equipment.storethreee');

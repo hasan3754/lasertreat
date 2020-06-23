@@ -48,38 +48,38 @@
                     </a>
                 </div>
                 <ul class="nav">
-                    <li class="nav-item active">
-                        <a class="nav-link" href="dashboard.html">
+                    <li class="nav-item">
+                        <a class="nav-link" href="{{route('dashboard')}}">
                             <i class="nc-icon nc-chart-pie-35"></i>
-                            <p>Dashboard</p>
+                            <p>Main slider</p>
                         </a>
                     </li>
                     <li>
-                        <a class="nav-link" href="./user.html">
+                        <a class="nav-link" href="{{route('conference')}}">
                             <i class="nc-icon nc-circle-09"></i>
-                            <p>User Profile</p>
+                            <p>Conference</p>
                         </a>
                     </li>
                     <li>
-                        <a class="nav-link" href="./table.html">
+                        <a class="nav-link" href="{{route('treatments')}}">
                             <i class="nc-icon nc-notes"></i>
-                            <p>Table List</p>
+                            <p>Treatments</p>
                         </a>
                     </li>
-                    <li>
-                        <a class="nav-link" href="./typography.html">
+                    <li class="nav-item active">
+                        <a class="nav-link" href="{{route('specialist')}}">
                             <i class="nc-icon nc-paper-2"></i>
-                            <p>Typography</p>
+                            <p>Specialists</p>
                         </a>
                     </li>
                     <li>
-                        <a class="nav-link" href="./icons.html">
+                        <a class="nav-link" href="{{route('equipments')}}">
                             <i class="nc-icon nc-atom"></i>
-                            <p>Icons</p>
+                            <p>Equipments</p>
                         </a>
                     </li>
                     <li>
-                        <a class="nav-link" href="./maps.html">
+                        <a class="nav-link" href="{{route('map')}}">
                             <i class="nc-icon nc-pin-3"></i>
                             <p>Maps</p>
                         </a>
@@ -163,6 +163,17 @@
             </nav>
             <!-- End Navbar -->
             <div class="content">
+
+            @if(isset($message))
+            <div class="alert alert-info alert-dismissible psd" role="alert">
+                <button type="button" class="close" data-dismiss="alert"><span aria-hidden="true">&times;</span><span class="sr-only">Close</span></button>
+                <strong>{{$message}}</strong>
+                </div>
+
+            @endif    
+
+
+
                 <div class="container-fluid">
                 <h3 >Specialist card one</h3>
                 <form method="post" action="{{ route('specialist.storeone') }}" enctype="multipart/form-data">

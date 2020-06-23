@@ -38,6 +38,12 @@ class specialistController extends Controller
         $slider->image = $imagename;
         $slider->save();
 
+
+
+        $message="Specialist card one created successfully";
+
+        return view("specialist", compact("message"));
+
     }
 
 
@@ -73,6 +79,9 @@ class specialistController extends Controller
         $slider->image = $imagename;
         $slider->save();
 
+        $message="Specialist card two created successfully";
+
+        return view("specialist", compact("message"));
     }
 
 
@@ -108,6 +117,11 @@ class specialistController extends Controller
         $slider->paragraph = $request->paragraphthree;
         $slider->image = $imagename;
         $slider->save();
+
+
+        $message="Specialist card three created successfully";
+
+        return view("specialist", compact("message"));
 
     }
 

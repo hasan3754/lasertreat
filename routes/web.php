@@ -19,11 +19,11 @@ use App\slider;
 
 Route::get('/dashboard', function () {
     return view('dashboard');
-});
+})->name('dashboard');
 
 Route::get('/conference', function () {
     return view('conference');
-});
+})->name('conference');
 
 Route::post('/store','SliderController@store')->name('slider.store');
 
@@ -49,7 +49,7 @@ Route::post('/storethree','conferenceController@storethree')->name('conference.s
 
 Route::get('/specialist', function () {
     return view('specialist');
-});
+})->name('specialist');
 Route::post('/storeonesp','specialistController@storeone')->name('specialist.storeone');
 Route::post('/storetwosp','specialistController@storetwo')->name('specialist.storetwo');
 Route::post('/storethreesp','specialistController@storethree')->name('specialist.storethree');
@@ -63,7 +63,7 @@ Route::post('/storetwotr','treatmentController@storetwo')->name('treatment.store
 
 Route::get('/treatments', function () {
     return view('treatments');
-});
+})->name('treatments');
 Route::post('/storefourtr','treatmentController@storefour')->name('treatment.storefour');
 
 
@@ -77,8 +77,24 @@ Route::post('/storetwoequi','equipmentController@storetwo')->name('equipment.sto
 
 Route::get('/equipments', function () {
     return view('equipments');
-});
+})->name('equipments');
 Route::post('/storefourequi','equipmentController@storefour')->name('equipment.storefour');
 
 
 Route::post('/storethreeequi','equipmentController@storethreee')->name('equipment.storethreee');
+
+
+
+Route::post('/storemap','mapController@store')->name('map.store');
+
+
+
+
+
+
+Route::get('/map', function () {
+    return view('map');
+})->name('map');
+
+
+

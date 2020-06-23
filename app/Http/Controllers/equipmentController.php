@@ -38,6 +38,11 @@ class equipmentController extends Controller
         $slider->image = $imagename;
         $slider->save();
 
+
+        $message="Equipment image one created successfully";
+
+        return view("equipments", compact("message"));
+
     }
 
 
@@ -70,6 +75,11 @@ class equipmentController extends Controller
         $slider->title = $request->titletwo;
         $slider->image = $imagename;
         $slider->save();
+
+
+        $message="Equipment image two created successfully";
+
+        return view("equipments", compact("message"));
 
     }
 
@@ -105,6 +115,11 @@ class equipmentController extends Controller
         $slider->image = $imagename;
         $slider->save();
 
+
+        $message="Equipment image three created successfully";
+
+        return view("equipments", compact("message"));
+
     }
 
 
@@ -134,6 +149,9 @@ class equipmentController extends Controller
         $slider->title = $request->titlefour;
         $slider->image = $imagename;
         $slider->save();
+      
+        $message="Equipment image four created successfully";
 
+        return view("equipments", compact("message"));
     }
 }

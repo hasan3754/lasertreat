@@ -37,6 +37,11 @@ class treatmentController extends Controller
         $slider->image = $imagename;
         $slider->save();
 
+
+        $message="treatments image one created successfully";
+
+        return view("treatments", compact("message"));
+
     }
 
 
@@ -69,6 +74,11 @@ class treatmentController extends Controller
         $slider->title = $request->titletwo;
         $slider->image = $imagename;
         $slider->save();
+
+
+        $message="treatments image two created successfully";
+
+        return view("treatments", compact("message"));
 
     }
 
@@ -104,6 +114,10 @@ class treatmentController extends Controller
         $slider->image = $imagename;
         $slider->save();
 
+        $message="treatments image three created successfully";
+
+        return view("treatments", compact("message"));
+
     }
 
 
@@ -133,6 +147,11 @@ class treatmentController extends Controller
         $slider->title = $request->titlefour;
         $slider->image = $imagename;
         $slider->save();
+
+
+        $message="treatments image four created successfully";
+
+        return view("treatments", compact("message"));
 
     }
 }

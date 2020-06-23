@@ -38,6 +38,11 @@ class conferenceController extends Controller
         $slider->image = $imagename;
         $slider->save();
 
+
+        $message="Conference card one created successfully";
+
+        return view("conference", compact("message"));
+
     }
 
 
@@ -72,6 +77,11 @@ class conferenceController extends Controller
         $slider->paragraph = $request->paragraphtwo;
         $slider->image = $imagename;
         $slider->save();
+
+
+        $message="Conference card two created successfully";
+
+        return view("conference", compact("message"));
 
     }
 
@@ -108,6 +118,11 @@ class conferenceController extends Controller
         $slider->paragraph = $request->paragraphthree;
         $slider->image = $imagename;
         $slider->save();
+
+
+        $message="Conference card three created successfully";
+
+        return view("conference", compact("message"));
 
     }
 }

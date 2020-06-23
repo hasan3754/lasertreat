@@ -1,4 +1,4 @@
-<!-- 
+<!--
 =========================================================
  Light Bootstrap Dashboard - v2.0.1
 =========================================================
@@ -12,8 +12,7 @@
 =========================================================
 
  The above copyright notice and this permission notice shall be included in all copies or substantial portions of the Software.  -->
- <!DOCTYPE html>
-
+<!DOCTYPE html>
 <html lang="en">
 
 <head>
@@ -44,7 +43,7 @@
             <div class="sidebar-wrapper">
                 <div class="logo">
                     <a href="http://www.creative-tim.com" class="simple-text">
-                        Laser Treat
+                        Creative Tim
                     </a>
                 </div>
                 <ul class="nav">
@@ -72,13 +71,13 @@
                             <p>Specialists</p>
                         </a>
                     </li>
-                    <li class="nav-item active">
+                    <li>
                         <a class="nav-link" href="{{route('equipments')}}">
                             <i class="nc-icon nc-atom"></i>
                             <p>Equipments</p>
                         </a>
                     </li>
-                    <li>
+                    <li class="active">
                         <a class="nav-link" href="{{route('map')}}">
                             <i class="nc-icon nc-pin-3"></i>
                             <p>Maps</p>
@@ -98,7 +97,7 @@
             <!-- Navbar -->
             <nav class="navbar navbar-expand-lg " color-on-scroll="500">
                 <div class="container-fluid">
-                    <a class="navbar-brand" href="#pablo"> Dashboard </a>
+                    <a class="navbar-brand" href="#pablo"> Table List </a>
                     <button href="" class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse" aria-controls="navigation-index" aria-expanded="false" aria-label="Toggle navigation">
                         <span class="navbar-toggler-bar burger-lines"></span>
                         <span class="navbar-toggler-bar burger-lines"></span>
@@ -163,6 +162,7 @@
             </nav>
             <!-- End Navbar -->
             <div class="content">
+
             @if(isset($message))
             <div class="alert alert-info alert-dismissible psd" role="alert">
                 <button type="button" class="close" data-dismiss="alert"><span aria-hidden="true">&times;</span><span class="sr-only">Close</span></button>
@@ -171,82 +171,34 @@
 
             @endif    
 
+
                 <div class="container-fluid">
-                <h3 >Equipment image one</h3>
-                <form method="post" action="{{ route('equipment.storeone') }}" enctype="multipart/form-data">
+                    <div class="row">
+                        <div class="col-md-12">
+                        <div class="content">
+                <div class="container-fluid">
+               
+                <form method="post" action="{{ route('appointment.store') }}" enctype="multipart/form-data">
                        @csrf
                     <div class="form-group">
-                        <label for="exampleInputEmail1">image  title</label>
-                        <input type="text" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" name="titleone">
+                        <label for="exampleInputEmail1">appointment image name</label>
+                        <input type="text" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" name="title">
                         
                     </div>
                      <div class="form-group">
-                        <label for="exampleFormControlFile1">Upload  image one</label>
-                        <input type="file" class="form-control-file" id="exampleFormControlFile1" name="imageone">
+                        <label for="exampleFormControlFile1">Upload appointment image</label>
+                        <input type="file" class="form-control-file" id="exampleFormControlFile1" name="image">
                     </div>
                     <button type="submit" class="btn btn-primary">Submit</button>
                     </form>
 
-
-             </div>  
-
-             <div class="container-fluid">
-             <h3 >Equipment image two</h3>
-                <form method="post" action="{{ route('equipment.storetwo') }}" enctype="multipart/form-data">
-                       @csrf
-                       <div class="form-group">
-                        <label for="exampleInputEmail1">image  title</label>
-                        <input type="text" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" name="titletwo">
-                        
+                </div>    
+                            </div>
+                        </div>
+                      
                     </div>
-                     <div class="form-group">
-                        <label for="exampleFormControlFile1">Upload image two</label>
-                        <input type="file" class="form-control-file" id="exampleFormControlFile1" name="imagetwo">
-                    </div>
-                    <button type="submit" class="btn btn-primary">Submit</button>
-                    </form>
-
-
-             </div>  
-             <div class="container-fluid">
-             <h3 >Equipment image three</h3>
-                <form method="post" action="{{ route('equipment.storethreee') }}" enctype="multipart/form-data">
-                       @csrf
-                       <div class="form-group">
-                        <label for="exampleInputEmail1">image  title</label>
-                        <input type="text" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" name="titlethree">
-                        
-                    </div>
-                     <div class="form-group">
-                        <label for="exampleFormControlFile1">Upload image three</label>
-                        <input type="file" class="form-control-file" id="exampleFormControlFile1" name="imagethree">
-                    </div>
-                    <button type="submit" class="btn btn-primary">Submit</button>
-                    </form>
-
-
-             </div>  
-
-
-             <div class="container-fluid">
-             <h3 >Treatment image four</h3>
-                <form method="post" action="{{ route('treatment.storefour') }}" enctype="multipart/form-data">
-                       @csrf
-                       <div class="form-group">
-                        <label for="exampleInputEmail1">image  title</label>
-                        <input type="text" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" name="titlefour">
-                        
-                    </div>
-                     <div class="form-group">
-                        <label for="exampleFormControlFile1">Upload image three</label>
-                        <input type="file" class="form-control-file" id="exampleFormControlFile1" name="imagefour">
-                    </div>
-                    <button type="submit" class="btn btn-primary">Submit</button>
-                    </form>
-
-
-             </div>  
-             </div>    
+                </div>
+            </div>
             <footer class="footer">
                 <div class="container-fluid">
                     <nav>
@@ -284,87 +236,9 @@
             </footer>
         </div>
     </div>
-    <!--   -->
-    <!-- <div class="fixed-plugin">
-    <div class="dropdown show-dropdown">
-        <a href="#" data-toggle="dropdown">
-            <i class="fa fa-cog fa-2x"> </i>
-        </a>
-
-        <ul class="dropdown-menu">
-			<li class="header-title"> Sidebar Style</li>
-            <li class="adjustments-line">
-                <a href="javascript:void(0)" class="switch-trigger">
-                    <p>Background Image</p>
-                    <label class="switch">
-                        <input type="checkbox" data-toggle="switch" checked="" data-on-color="primary" data-off-color="primary"><span class="toggle"></span>
-                    </label>
-                    <div class="clearfix"></div>
-                </a>
-            </li>
-            <li class="adjustments-line">
-                <a href="javascript:void(0)" class="switch-trigger background-color">
-                    <p>Filters</p>
-                    <div class="pull-right">
-                        <span class="badge filter badge-black" data-color="black"></span>
-                        <span class="badge filter badge-azure" data-color="azure"></span>
-                        <span class="badge filter badge-green" data-color="green"></span>
-                        <span class="badge filter badge-orange" data-color="orange"></span>
-                        <span class="badge filter badge-red" data-color="red"></span>
-                        <span class="badge filter badge-purple active" data-color="purple"></span>
-                    </div>
-                    <div class="clearfix"></div>
-                </a>
-            </li>
-            <li class="header-title">Sidebar Images</li>
-
-            <li class="active">
-                <a class="img-holder switch-trigger" href="javascript:void(0)">
-                    <img src="../assets/img/sidebar-1.jpg" alt="" />
-                </a>
-            </li>
-            <li>
-                <a class="img-holder switch-trigger" href="javascript:void(0)">
-                    <img src="../assets/img/sidebar-3.jpg" alt="" />
-                </a>
-            </li>
-            <li>
-                <a class="img-holder switch-trigger" href="javascript:void(0)">
-                    <img src="..//assets/img/sidebar-4.jpg" alt="" />
-                </a>
-            </li>
-            <li>
-                <a class="img-holder switch-trigger" href="javascript:void(0)">
-                    <img src="../assets/img/sidebar-5.jpg" alt="" />
-                </a>
-            </li>
-
-            <li class="button-container">
-                <div class="">
-                    <a href="http://www.creative-tim.com/product/light-bootstrap-dashboard" target="_blank" class="btn btn-info btn-block btn-fill">Download, it's free!</a>
-                </div>
-            </li>
-
-            <li class="header-title pro-title text-center">Want more components?</li>
-
-            <li class="button-container">
-                <div class="">
-                    <a href="http://www.creative-tim.com/product/light-bootstrap-dashboard-pro" target="_blank" class="btn btn-warning btn-block btn-fill">Get The PRO Version!</a>
-                </div>
-            </li>
-
-            <li class="header-title" id="sharrreTitle">Thank you for sharing!</li>
-
-            <li class="button-container">
-				<button id="twitter" class="btn btn-social btn-outline btn-twitter btn-round sharrre"><i class="fa fa-twitter"></i> · 256</button>
-                <button id="facebook" class="btn btn-social btn-outline btn-facebook btn-round sharrre"><i class="fa fa-facebook-square"></i> · 426</button>
-            </li>
-        </ul>
-    </div>
-</div>
- -->
+ 
 </body>
-<!--   Core JS Files   -->
+
 <script src="{{ asset('assets/js/core/jquery.3.2.1.min.js') }}" type="text/javascript"></script>
 <script src="{{ asset('assets/js/core/popper.min.js') }}" type="text/javascript"></script>
 <script src="{{ asset('assets/js/core/bootstrap.min.js') }}" type="text/javascript"></script>
@@ -389,4 +263,7 @@
     });
 </script>
 
+<script>
+response.setIntHeader("Refresh", 1);
+</script>
 </html>

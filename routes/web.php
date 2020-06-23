@@ -88,6 +88,9 @@ Route::post('/storethreeequi','equipmentController@storethreee')->name('equipmen
 Route::post('/storemap','mapController@store')->name('map.store');
 
 
+Route::post('/storeappointment','appointmentController@store')->name('appointment.store');
+
+
 
 
 
@@ -95,6 +98,11 @@ Route::post('/storemap','mapController@store')->name('map.store');
 Route::get('/map', function () {
     return view('map');
 })->name('map');
+
+
+Route::get('/appointment', function () {
+    return view('appointment');
+})->name('appointment');
 
 
 

@@ -84,12 +84,11 @@
                         </a>
                     </li>
                     <li>
-                        <a class="nav-link" href="./notifications.html">
+                        <a class="nav-link" href="{{route('appointment')}}">
                             <i class="nc-icon nc-bell-55"></i>
-                            <p>Notifications</p>
+                            <p>Appointment</p>
                         </a>
                     </li>
-
                 </ul>
             </div>
         </div>

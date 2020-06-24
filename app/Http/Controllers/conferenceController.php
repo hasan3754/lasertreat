@@ -10,6 +10,15 @@ use Illuminate\Http\Request;
 
 class conferenceController extends Controller
 {
+
+
+    public function __construct()
+    {
+        $this->middleware('auth');
+    }
+
+
+
     public function storeone(Request $request)
     {
         $this->validate($request,[

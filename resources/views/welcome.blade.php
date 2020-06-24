@@ -185,13 +185,12 @@
       <div class="card car vir">
       <div class="" onclick="">
 
-      <img class="card-img-top ca img-fluid pini" src="http://www.ophthalmichospital.com/image1.jpg" alt="Card image cap">
+      <img class="card-img-top ca img-fluid pini" src="{{ 'uploads/slider/'.$conone->image }}" alt="Card image cap">
       <div class="card-block child">
-        <h4 class="card-title tiup foup pin liton nin pil cpl">LOS ANGELES</h4>
-        <p class="card-text tiup nomi pin mrtn">Laser treat is the only "ISO 9000 2008" certified BEUTICINOLOGY clinic in bangladesh<br><br><br><br><br></p>
+        <h4 class="card-title tiup foup pin liton nin pil cpl">{{$conone->title}}</h4>
+        <p class="card-text tiup nomi pin mrtn">{{$conone->paragraph}}<br><br><br><br><br></p>
       </div>
       </div>
-
       <div class="card-footer mrbnn donv">
      <small class="findi"> <div class="float-left wi"><i class="fa fa-comments"></i> 3 comments</div><div class="float-right vi"><i class="fa fa-calendar"></i>March19,2019</div></small>
       </div>
@@ -199,10 +198,10 @@
     <div class="col-xs-12 col-md-6 col-4 col-lg-3 mar parent">
       <div class="card car vir">
                 <div class="" onclick="">
-      <img class="card-img-top trin cab img-fluid pini quack" src="http://www.ophthalmichospital.com/2.jpg" alt="Card image cap" id="new">
+      <img class="card-img-top trin cab img-fluid pini quack" src="{{ 'uploads/slider/'.$contwo->image }}" alt="Card image cap" id="new">
       <div class="card-block child">
-        <h4 class="card-title miup foup pin fin nin cpl">DR. SARKER MAHBUB AHMED SHAMIM</h4>
-        <p class="card-text miup dipn pin mrtn">MBBS dip. derm(glasgow,uk) diploma in aesthetic medicine(USA),MCPS,FCPS(Dermatology) skin,sex and antiaging specialist,Laser,Hair transplant & Cosmetic Surgeon<br></p>
+        <h4 class="card-title miup foup pin fin nin cpl">{{$contwo->title}}</h4>
+        <p class="card-text miup dipn pin mrtn">{{$contwo->paragraph}}<br></p>
         </div>
         </div>
       <div class="card-footer mrbn mhcn mkin">
@@ -213,10 +212,10 @@
     <div class="col-xs-12 col-md-6 col-4 col-lg-3 mar parent">
       <div class="card car vir">
       <div class="" onclick="">
-      <img class="card-img-top carb img-fluid pini" src="http://www.ophthalmichospital.com/3.jpg" alt="Card image cap">
+      <img class="card-img-top carb img-fluid pini" src="{{ 'uploads/slider/'.$conthree->image }}" alt="Card image cap">
       <div class="card-block child">
-        <h4 class="card-title biup foup pin nin pil cpl">DUBAI</h4>
-        <p class="card-text diup pin mrtn">Laser treat is the only "ISO 9000 2008" certified BEUTICINOLOGY clinic in bangladesh<br><br><br><br><br></p>
+        <h4 class="card-title biup foup pin nin pil cpl">{{$conthree->title}}</h4>
+        <p class="card-text diup pin mrtn">{{$conthree->paragraph}}<br><br><br><br><br></p>
         </div>
         </div>
       <div class="card-footer mrbnn donv">
@@ -238,7 +237,7 @@
             <div class="item selfie col-lg-3 col-md-3 col-3 col-sm  nun">
                <a href="http://www.ophthalmichospital.com/b.jpg" class="fancylight popup-btn" data-fancybox-group="light"> 
                <div class="zoom">
-               <img class="img-fluid" src="http://www.ophthalmichospital.com/b.jpg" alt="">
+               <img class="img-fluid llp" src="{{ 'uploads/slider/'.$treone->image }}" alt="">
                </div>
                </a>
              
@@ -267,7 +266,7 @@
             <div class="item selfie col-lg-3 col-md-3 col-3 col-sm">
                <a href="http://www.ophthalmichospital.com/d.jpg" class="fancylight popup-btn" data-fancybox-group="light">
                    <div class="zoom">
-               <img class="img-fluid" src="http://www.ophthalmichospital.com/d.jpg" alt="">
+               <img class="img-fluid llp" src="{{ 'uploads/slider/'.$tretwo->image }}" alt="">
                </div>
                </a>
 
@@ -318,7 +317,7 @@
             <div class="item gts col-lg-3 col-md-3 col-3 col-sm">
                <a href="http://www.ophthalmichospital.com/c.jpg" class="fancylight popup-btn" data-fancybox-group="light"> 
                <div class="zoom">
-               <img class="img-fluid" src="http://www.ophthalmichospital.com/c.jpg" alt="">
+               <img class="img-fluid llp" src="{{ 'uploads/slider/'.$trethree->image }}" alt="">
                </div>
                </a>
                  
@@ -347,7 +346,7 @@
             <div class="item gts col-lg-3 col-md-3 col-3 col-sm">
                <a href="http://www.ophthalmichospital.com/a.jpg"  class="fancylight popup-btn" data-fancybox-group="light">
                    <div class="zoom">
-               <img class="img-fluid" src="http://www.ophthalmichospital.com/a.jpg" alt="">
+               <img class="img-fluid llp" src="{{ 'uploads/slider/'.$trefour->image }}" alt="">
                </div>
                </a>
                  <div class="centered"></div>
@@ -378,11 +377,11 @@
     <div class="col-xs-12 col-md-6 col-lg-3 col-4 parent">
       <div class="card car cari">
          <div class=""> 
-      <img class="card-img-top trinnn carbo " src="http://www.ophthalmichospital.com/2.jpg" height="355" width="330" alt="Card image cap">
+      <img class="card-img-top trinnn carbo " src="{{ 'uploads/slider/'.$speone->image }}" height="355" width="330" alt="Card image cap">
       <div class="card-block child">
-        <h4 class="card-title  minto likin vn">DR. SARKER MAHBUB AHMED SHAMIM</h4>
+        <h4 class="card-title  minto likin vn">{{$speone->title}}</h4>
         <hr>
-  <p class="card-text nini">Chief consultant of Laser treat<p class="ni">MBBS dip. derm(glasgow,uk) diploma in aesthetic medicine(USA),MCPS,FCPS(Dermatology) skin,sex and antiaging specialist,Laser,Hair transplant & Cosmetic Surgeon<br><br></p></p>
+  <p class="card-text nini">{{$speone->paragraph}}<br><br></p></p>
         <p class="lot bini">.</p>
         </div>
   
@@ -390,11 +389,11 @@
     <div class="col-xs-12 col-md-6 col-lg-3 col-4 parent">
       <div class="card car cari">
     <div class="">      
-      <img class="card-img-top ulu carbon " src="http://www.ophthalmichospital.com/are.jpg" height="355" width="330"  alt="Card image cap">
+      <img class="card-img-top ulu carbon " src="{{ 'uploads/slider/'.$spetwo->image }}" height="355" width="330"  alt="Card image cap">
        <div class="card-block child">
-        <h4 class="card-title  minto liki vn">DR. RABEA AFROZ SHOMA</h4>
+        <h4 class="card-title  minto liki vn">{{$spetwo->title}}</h4>
         <hr>
-  <p class="card-text nini">Junior consultant of Laser treat<p class="ni mi">Advanced training<br>American academy of aesthetic medicine(USA),Advanced training(Aesthetic Dermatology) Aesthetic dermatologist and laser specialist<br><br></p></p>
+  <p class="card-text nini">Junior consultant of Laser treat<p class="ni mi">{{$spetwo->paragraph}}<br><br></p></p>
         <p class="lot got bini">.</p>
         </div>
  
@@ -402,11 +401,11 @@
     <div class="col-xs-12 col-md-6 col-lg-3 col-4 parent">
       <div class="card car cari bold">
           <div class="">
-      <img class="card-img-top ulu nocar " src="http://www.ophthalmichospital.com/three.jpg" height="355" width="330"  alt="Card image cap">
+      <img class="card-img-top ulu nocar " src="{{ 'uploads/slider/'.$spethree->image }}" height="355" width="330"  alt="Card image cap">
       <div class="card-block child">
-        <h4 class="card-title  minto liki vn">DR. FARHANA RASHID SHUMI</h4>
+        <h4 class="card-title  minto liki vn">{{$spethree->title}}</h4>
         <hr>
-  <p class="card-text nini">Junior consultant of Laser treat<br><p class="ni mi">Advanced training<br>American academy of aesthetic medicine(USA),Advanced training(Aesthetic Dermatology) Aesthetic dermatologist and laser specialist<br><br></p></p>
+  <p class="card-text nini">Junior consultant of Laser treat<br><p class="ni mi">{{$spethree->paragraph}}<br><br></p></p>
         <p class="lot got bini">.</p>
         </div>
    
@@ -426,7 +425,7 @@
            
                <a href="http://www.ophthalmichospital.com/b.jpg" class="fancylight popup-btn" data-fancybox-group="light"> 
                <div class="zoom">
-               <img class="img-fluid" src="http://www.ophthalmichospital.com/xiiii.jpg" alt=""></div>
+               <img class="img-fluid" src="{{ 'uploads/slider/'.$equone->image }}" alt=""></div>
                </a>
              
              
@@ -458,7 +457,7 @@
             <div class="item selfie col-lg-3 col-md-3 col-3 col-sm">
                <a href="http://www.ophthalmichospital.com/d.jpg" class="fancylight popup-btn" data-fancybox-group="light">
                    <div class="zoom">
-               <img class="img-fluid" src="http://www.ophthalmichospital.com/xli.jpg" alt="">
+               <img class="img-fluid" src="{{ 'uploads/slider/'.$equtwo->image }}" alt="">
                </div>
                </a>
 
@@ -504,7 +503,7 @@
                 <div class="nibbi">
                <a href="http://www.ophthalmichospital.com/c.jpg" class="fancylight popup-btn" data-fancybox-group="light"> 
                <div class="zoom">
-               <img class="img-fluid" src="http://www.ophthalmichospital.com/xlin.jpg" alt="">
+               <img class="img-fluid" src="{{ 'uploads/slider/'.$equthree->image }}" alt="">
                </div>
                </a>
                  </div>
@@ -534,7 +533,7 @@
                 <div class="nibbi">
                <a href="http://www.ophthalmichospital.com/a.jpg"  class="fancylight popup-btn" data-fancybox-group="light">
                    <div class="zoom">
-               <img class="img-fluid" src="http://www.ophthalmichospital.com/xlind.jpg" alt=""></div>
+               <img class="img-fluid" src="{{ 'uploads/slider/'.$equfour->image }}" alt=""></div>
                </a>
                  <div class="centered"></div>
             </div>

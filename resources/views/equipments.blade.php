@@ -229,8 +229,8 @@
 
 
              <div class="container-fluid">
-             <h3 >Treatment image four</h3>
-                <form method="post" action="{{ route('treatment.storefour') }}" enctype="multipart/form-data">
+             <h3 >Equipment image four</h3>
+                <form method="post" action="{{ route('equipment.storefour') }}" enctype="multipart/form-data">
                        @csrf
                        <div class="form-group">
                         <label for="exampleInputEmail1">image  title</label>

@@ -103,7 +103,6 @@ class SliderController extends Controller
 
 
 
-
         $glider = slider::orderBy('id', 'ASC')->first();
         if($glider!=null){
         $glider->active='active';

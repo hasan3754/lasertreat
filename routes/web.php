@@ -51,6 +51,13 @@ Route::get('/specialist', function () {
     return view('specialist');
 })->name('specialist');
 Route::post('/storeonesp','specialistController@storeone')->name('specialist.storeone');
+
+Route::get('/storeonesp', function () {
+    $message="please fill in all the fields";
+    return view("specialist", compact("message"));
+});
+
+
 Route::post('/storetwosp','specialistController@storetwo')->name('specialist.storetwo');
 Route::post('/storethreesp','specialistController@storethree')->name('specialist.storethree');
 

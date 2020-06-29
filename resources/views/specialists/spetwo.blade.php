@@ -54,7 +54,7 @@
                             <p>Main slider</p>
                         </a>
                     </li>
-                    <li class="nav-item active">
+                    <li>
                         <a class="nav-link" href="{{route('conference')}}">
                             <i class="nc-icon nc-circle-09"></i>
                             <p>Conference</p>
@@ -66,7 +66,7 @@
                             <p>Treatments</p>
                         </a>
                     </li>
-                    <li>
+                    <li class="nav-item active">
                         <a class="nav-link" href="{{route('specialist')}}">
                             <i class="nc-icon nc-paper-2"></i>
                             <p>Specialists</p>
@@ -87,9 +87,10 @@
                     <li>
                         <a class="nav-link" href="{{route('appointment')}}">
                             <i class="nc-icon nc-bell-55"></i>
-                            <p>appointment</p>
+                            <p>Appointment</p>
                         </a>
                     </li>
+
                     <li>
                         <a class="nav-link" href="{{route('latest')}}">
                             <i class="nc-icon nc-bell-55"></i>
@@ -169,7 +170,7 @@
             </nav>
             <!-- End Navbar -->
             <div class="content">
-            
+
             @if(isset($message))
             <div class="alert alert-info alert-dismissible psd" role="alert">
                 <button type="button" class="close" data-dismiss="alert"><span aria-hidden="true">&times;</span><span class="sr-only">Close</span></button>
@@ -179,33 +180,10 @@
             @endif    
 
 
-                <div class="container-fluid">
-                <h3 >Conference card one</h3>
-                <form method="post" action="{{ route('conference.storeone') }}" enctype="multipart/form-data">
-                       @csrf
-                    <div class="form-group">
-                        <label for="exampleInputEmail1">card  title</label>
-                        <input type="text" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" name="titleone">
-                        
-                    </div>
-                    <div class="form-group">
-                        <label for="exampleInputEmail1">card  paragraph</label>
-                        <input type="text" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" name="paragraphone">
-                        
-                    </div>
-                     <div class="form-group">
-                        <label for="exampleFormControlFile1">Upload slider image</label>
-                        <input type="file" class="form-control-file" id="exampleFormControlFile1" name="imageone">
-                    </div>
-                    <button type="submit" class="btn btn-primary">Submit</button>
-                    </form>
 
-
-             </div>  
-
-             <div class="container-fluid">
-             <h3 >Conference card two</h3>
-                <form method="post" action="{{ route('conference.storetwo') }}" enctype="multipart/form-data">
+            <div class="container-fluid">
+             <h3 >Specialist card two</h3>
+                <form method="post" action="{{ route('specialist.storetwo') }}" enctype="multipart/form-data">
                        @csrf
                        <div class="form-group">
                         <label for="exampleInputEmail1">card  title</label>
@@ -220,29 +198,6 @@
                      <div class="form-group">
                         <label for="exampleFormControlFile1">Upload slider image</label>
                         <input type="file" class="form-control-file" id="exampleFormControlFile1" name="imagetwo">
-                    </div>
-                    <button type="submit" class="btn btn-primary">Submit</button>
-                    </form>
-
-
-             </div>  
-             <div class="container-fluid">
-             <h3 >Conference card three</h3>
-                <form method="post" action="{{ route('conference.storethree') }}" enctype="multipart/form-data">
-                       @csrf
-                       <div class="form-group">
-                        <label for="exampleInputEmail1">card  title</label>
-                        <input type="text" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" name="titlethree">
-                        
-                    </div>
-                    <div class="form-group">
-                        <label for="exampleInputEmail1">card  paragraph</label>
-                        <input type="text" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" name="paragraphthree">
-                        
-                    </div>
-                     <div class="form-group">
-                        <label for="exampleFormControlFile1">Upload slider image</label>
-                        <input type="file" class="form-control-file" id="exampleFormControlFile1" name="imagethree">
                     </div>
                     <button type="submit" class="btn btn-primary">Submit</button>
                     </form>
@@ -391,14 +346,5 @@
 
     });
 </script>
-<style>
-.psd:hover
-{
-        box-shadow: inset 0 0 0 25px #53a7ea;
-}
-.psd{
-    height:50px;
-    font-size:14px;
-}
-</style>
+
 </html>

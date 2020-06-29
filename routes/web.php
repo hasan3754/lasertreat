@@ -2,6 +2,25 @@
 
 
 use App\slider;
+use App\conone;
+use App\contwo;
+use App\conthree;
+use App\treone;
+use App\tretwo;
+use App\trethree;
+use App\speone;
+use App\spetwo;
+use App\spethree;
+use App\map;
+use App\equone;
+use App\equtwo;
+use App\equthree;
+use App\appointment;
+use App\latest;
+use App\latesttwo;
+use App\latestthree;
+use App\trefour;
+use App\equfour;
 
 /*
 |--------------------------------------------------------------------------
@@ -22,7 +41,12 @@ Route::get('/dashboard', function () {
 })->name('dashboard')->middleware('auth');
 
 Route::get('/conference', function () {
-    return view('conference');
+
+    $conone=conone::latest('created_at')->first();
+    $contwo=contwo::latest('created_at')->first();
+    $conthree=conthree::latest('created_at')->first();
+
+    return view("tables.conferencetable", compact("conone","contwo","conthree"));
 })->name('conference')->middleware('auth');
 
 Route::post('/store','SliderController@store')->name('slider.store');
@@ -68,7 +92,11 @@ Route::get('/storethree', function () {
 
 
 Route::get('/specialist', function () {
-    return view('specialist');
+    $speone=speone::latest('created_at')->first();
+    $spetwo=spetwo::latest('created_at')->first();
+    $spethree=spethree::latest('created_at')->first();
+
+    return view("tables.specialisttable", compact("speone","spetwo","spethree"));
 })->name('specialist')->middleware('auth');
 Route::post('/storeonesp','specialistController@storeone')->name('specialist.storeone');
 
@@ -110,7 +138,12 @@ Route::get('/storetwotr', function () {
 
 
 Route::get('/treatments', function () {
-    return view('treatments');
+    $treone=treone::latest('created_at')->first();
+    $tretwo=tretwo::latest('created_at')->first();
+    $trethree=trethree::latest('created_at')->first();
+    $trefour=trefour::latest('created_at')->first();
+
+    return view("tables.treatmenttable", compact("treone","tretwo","trethree","trefour"));
 })->name('treatments')->middleware('auth');
 Route::post('/storefourtr','treatmentController@storefour')->name('treatment.storefour');
 
@@ -147,7 +180,12 @@ Route::get('/storetwoequi', function () {
 
 
 Route::get('/equipments', function () {
-    return view('equipments');
+    $equone=equone::latest('created_at')->first();
+    $equtwo=equtwo::latest('created_at')->first();
+    $equthree=equthree::latest('created_at')->first();
+    $equfour=equfour::latest('created_at')->first();
+
+    return view("tables.equipmenttable", compact("equone","equtwo","equthree","equfour"));
 })->name('equipments')->middleware('auth');
 Route::post('/storefourequi','equipmentController@storefour')->name('equipment.storefour');
 
@@ -190,12 +228,16 @@ Route::get('/storeappointment', function () {
 
 
 Route::get('/map', function () {
-    return view('map');
+    $map=map::latest('created_at')->first();
+
+    return view("tables.maptable", compact("map"));
 })->name('map')->middleware('auth');
 
 
 Route::get('/appointment', function () {
-    return view('appointment');
+    $appointment=appointment::latest('created_at')->first();
+
+    return view("tables.appointmenttable", compact("appointment"));
 })->name('appointment')->middleware('auth');
 
 
@@ -204,3 +246,125 @@ Route::get('/appointment', function () {
 Auth::routes();
 
 Route::get('/home', 'HomeController@index')->name('home');
+
+
+
+
+
+
+
+
+
+Route::get('/latest', function () {
+    $latest=latest::latest('created_at')->first();
+    $latesttwo=latesttwo::latest('created_at')->first();
+    $latestthree=latestthree::latest('created_at')->first();
+
+    return view("tables.latesttable", compact("latest","latesttwo","latestthree"));
+})->name('latest')->middleware('auth');
+Route::post('/storeonelt','latestController@storeone')->name('latest.storeone');
+
+Route::get('/storeonelt', function () {
+    $message="please fill in all the fields";
+    return view("latest", compact("message"));
+});
+
+
+Route::post('/storetwolt','latestController@storetwo')->name('latest.storetwo');
+
+
+Route::get('/storetwolt', function () {
+    $message="please fill in all the fields";
+    return view("latest", compact("message"));
+});
+
+Route::post('/storethreelt','latestController@storethree')->name('latest.storethree');
+
+Route::get('/storethreelt', function () {
+    $message="please fill in all the fields";
+    return view("latest", compact("message"));
+});
+
+Route::get('/appointmentrd', function () {
+    return view('appointment');
+})->name('appointmentrd')->middleware('auth');
+
+
+Route::get('/cononerd', function () {
+    return view('conference.conone');
+})->name('cononerd')->middleware('auth');
+
+
+Route::get('/contword', function () {
+    return view('conference.contwo');
+})->name('contword')->middleware('auth');
+
+
+
+Route::get('/conthreerd', function () {
+    return view('conference.conthree');
+})->name('conthreerd')->middleware('auth');
+
+
+
+
+
+
+
+Route::get('/treonerd', function () {
+    return view('treatments.treone');
+})->name('treonerd')->middleware('auth');
+
+
+
+Route::get('/tretword', function () {
+    return view('treatments.tretwo');
+})->name('tretword')->middleware('auth');
+
+
+
+Route::get('/trethreerd', function () {
+    return view('treatments.trethree');
+})->name('trethreerd')->middleware('auth');
+
+
+Route::get('/trefourrd', function () {
+    return view('treatments.trefour');
+})->name('trefourrd')->middleware('auth');
+
+
+
+Route::get('/speonerd', function () {
+    return view('specialists.speone');
+})->name('speonerd')->middleware('auth');
+
+
+Route::get('/spetword', function () {
+    return view('specialists.spetwo');
+})->name('spetword')->middleware('auth');
+
+
+Route::get('/spethreerd', function () {
+    return view('specialists.spethree');
+})->name('spethreerd')->middleware('auth');
+
+
+
+Route::get('/equthreerd', function () {
+    return view('specialists.equthree');
+})->name('equthreerd')->middleware('auth');
+
+
+Route::get('/equonerd', function () {
+    return view('specialists.equone');
+})->name('equonerd')->middleware('auth');
+
+
+Route::get('/equtword', function () {
+    return view('specialists.equtwo');
+})->name('equtword')->middleware('auth');
+
+
+Route::get('/equfourrd', function () {
+    return view('specialists.equfour');
+})->name('equfourrd')->middleware('auth');

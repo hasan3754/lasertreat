@@ -52,7 +52,7 @@ class specialistController extends Controller
 
         $message="Specialist card one created successfully";
 
-        return view("specialist", compact("message"));
+        return view("specialist.speone", compact("message"));
 
     }
 
@@ -91,7 +91,7 @@ class specialistController extends Controller
 
         $message="Specialist card two created successfully";
 
-        return view("specialist", compact("message"));
+        return view("specialist.spetwo", compact("message"));
     }
 
 
@@ -131,7 +131,7 @@ class specialistController extends Controller
 
         $message="Specialist card three created successfully";
 
-        return view("specialist", compact("message"));
+        return view("specialist.spethree", compact("message"));
 
     }
 

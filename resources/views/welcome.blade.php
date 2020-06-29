@@ -103,7 +103,7 @@
   @if($slider!='no slider')
   @foreach ($slider as $key => $slider)
     <div class="slide {{$slider->active}}">
-      <img src="{{ 'uploads/slider/'.$slider->image }}" alt="New York City" title="New York City" />
+      <img src="{{'uploads/slider/'.$slider->image  }}" alt="New York City" title="New York City" />
 
       
     </div>

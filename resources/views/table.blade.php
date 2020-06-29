@@ -89,6 +89,12 @@
                             <p>Appointment</p>
                         </a>
                     </li>
+                    <li>
+                        <a class="nav-link" href="{{route('latest')}}">
+                            <i class="nc-icon nc-bell-55"></i>
+                            <p>latest</p>
+                        </a>
+                    </li>
                 </ul>
             </div>
         </div>

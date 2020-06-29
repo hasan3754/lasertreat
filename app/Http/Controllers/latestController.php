@@ -1,18 +1,17 @@
 <?php
 
 namespace App\Http\Controllers;
-use App\treone;
-use App\tretwo;
-use App\trethree;
-use App\trefour;
+
+use App\latest;
+use App\latesttwo;
+use App\latestthree;
 use Carbon\Carbon;
 
 use Illuminate\Http\Request;
 
-class treatmentController extends Controller
+class latestController extends Controller
 {
-
-
+    
     public function __construct()
     {
         $this->middleware('auth');
@@ -25,6 +24,7 @@ class treatmentController extends Controller
     {
         $this->validate($request,[
             'titleone' => 'required',
+            'paragraphone' => 'required',
             'imageone' => 'required|mimes:jpeg,jpg,bmp,png',
         ]);
         $image = $request->file('imageone');
@@ -42,15 +42,17 @@ class treatmentController extends Controller
             $imagename = 'dafault.png';
         }
 
-        $slider = new treone();
+        $slider = new latest();
         $slider->title = $request->titleone;
+        $slider->paragraph = $request->paragraphone;
         $slider->image = $imagename;
         $slider->save();
 
 
-        $message="treatments image one created successfully";
 
-        return view("treatments.treone", compact("message"));
+        $message="latest card one created successfully";
+
+        return view("latest", compact("message"));
 
     }
 
@@ -63,6 +65,7 @@ class treatmentController extends Controller
     {
         $this->validate($request,[
             'titletwo' => 'required',
+            'paragraphtwo' => 'required',
             'imagetwo' => 'required|mimes:jpeg,jpg,bmp,png',
         ]);
         $image = $request->file('imagetwo');
@@ -80,16 +83,15 @@ class treatmentController extends Controller
             $imagename = 'dafault.png';
         }
 
-        $slider = new tretwo();
+        $slider = new latesttwo();
         $slider->title = $request->titletwo;
+        $slider->paragraph = $request->paragraphtwo;
         $slider->image = $imagename;
         $slider->save();
 
+        $message="latest card two created successfully";
 
-        $message="treatments image two created successfully";
-
-        return view("treatments.tretwo", compact("message"));
-
+        return view("latest", compact("message"));
     }
 
 
@@ -98,14 +100,15 @@ class treatmentController extends Controller
 
 
 
-    public function storethreee(Request $request)
+    public function storethree(Request $request)
     {
         $this->validate($request,[
             'titlethree' => 'required',
+            'paragraphthree' => 'required',
             'imagethree' => 'required|mimes:jpeg,jpg,bmp,png',
         ]);
         $image = $request->file('imagethree');
-        $slug = str_slug($request->titlethree);
+        $slug = str_slug($request->titletwo);
         if (isset($image))
         {
             $currentDate = Carbon::now()->toDateString();
@@ -119,49 +122,16 @@ class treatmentController extends Controller
             $imagename = 'dafault.png';
         }
 
-        $slider = new trethree();
+        $slider = new latestthree();
         $slider->title = $request->titlethree;
-        $slider->image = $imagename;
-        $slider->save();
-
-        $message="treatments image three created successfully";
-
-        return view("treatments.trethree", compact("message"));
-
-    }
-
-
-
-    public function storefour(Request $request)
-    {
-        $this->validate($request,[
-            'titlefour' => 'required',
-            'imagefour' => 'required|mimes:jpeg,jpg,bmp,png',
-        ]);
-        $image = $request->file('imagefour');
-        $slug = str_slug($request->titlethree);
-        if (isset($image))
-        {
-            $currentDate = Carbon::now()->toDateString();
-            $imagename = $slug .'-'. $currentDate .'-'. uniqid() .'.'. $image->getClientOriginalExtension();
-            if (!file_exists('uploads/slider'))
-            {
-                mkdir('uploads/slider', 0777 , true);
-            }
-            $image->move('uploads/slider',$imagename);
-        }else {
-            $imagename = 'dafault.png';
-        }
-
-        $slider = new trefour();
-        $slider->title = $request->titlefour;
+        $slider->paragraph = $request->paragraphthree;
         $slider->image = $imagename;
         $slider->save();
 
 
-        $message="treatments image four created successfully";
+        $message="latest card three created successfully";
 
-        return view("treatments.trefour", compact("message"));
+        return view("latest", compact("message"));
 
     }
 }

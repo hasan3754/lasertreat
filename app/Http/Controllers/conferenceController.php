@@ -36,7 +36,7 @@ class conferenceController extends Controller
             {
                 mkdir('uploads/slider', 0777 , true);
             }
-            $image->move('uploads/slider',$imagename);
+            $image->move('uploads/',$imagename);
         }else {
             $imagename = 'dafault.png';
         }
@@ -50,7 +50,7 @@ class conferenceController extends Controller
 
         $message="Conference card one created successfully";
 
-        return view("conference", compact("message"));
+        return view("conference.conone", compact("message"));
 
     }
 
@@ -90,7 +90,7 @@ class conferenceController extends Controller
 
         $message="Conference card two created successfully";
 
-        return view("conference", compact("message"));
+        return view("conference.conthree", compact("message"));
 
     }
 
@@ -131,7 +131,7 @@ class conferenceController extends Controller
 
         $message="Conference card three created successfully";
 
-        return view("conference", compact("message"));
+        return view("conference.conthree", compact("message"));
 
     }
 }

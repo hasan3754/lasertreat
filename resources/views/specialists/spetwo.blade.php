@@ -197,7 +197,8 @@
                     </div>
                      <div class="form-group">
                         <label for="exampleFormControlFile1">Upload slider image</label>
-                        <input type="file" class="form-control-file" id="exampleFormControlFile1" name="imagetwo">
+                        <input type="file" class="form-control-file" id="exampleFormControlFile1" accept="image/*" onchange="loadFile(event)" name="imagetwo">
+                        <img id="output"/>
                     </div>
                     <button type="submit" class="btn btn-primary">Submit</button>
                     </form>
@@ -348,3 +349,22 @@
 </script>
 
 </html>
+<script>
+  var loadFile = function(event) {
+    var output = document.getElementById('output');
+    output.style.height = "300px";
+    output.style.width = "300px";
+    output.style.margin = "20px";
+    output.src = URL.createObjectURL(event.target.files[0]);
+    output.onload = function() {
+      URL.revokeObjectURL(output.src) // free memory
+      
+    }
+  };
+</script>
+
+<script src="{{ asset('ckeditor/ckeditor.js') }}"></script>
+
+<script>
+CKEDITOR.replace( 'paragraphtwo' );
+</script>

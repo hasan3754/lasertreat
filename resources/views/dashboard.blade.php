@@ -31,6 +31,7 @@
     <link href="{{ asset('assets/css/light-bootstrap-dashboard.css?v=2.0.0 ') }}" rel="stylesheet" />
     <!-- CSS Just for demo purpose, don't include it in your project -->
     <link href="{{ asset('assets/css/demo.css') }}" rel="stylesheet" />
+    <link href="{{ asset('assets/css/demo.css') }}" rel="stylesheet" />
 </head>
 
 <body>
@@ -194,7 +195,8 @@
                     </div>
                      <div class="form-group">
                         <label for="exampleFormControlFile1">Upload slider image</label>
-                        <input type="file" class="form-control-file" id="exampleFormControlFile1" name="image">
+                        <input type="file" class="form-control-file" accept="image/*" onchange="loadFile(event)" id="exampleFormControlFile1" name="image">
+                        <img id="output"/>
                     </div>
                     <button type="submit" class="btn btn-primary">Submit</button>
                     </form>
@@ -348,5 +350,26 @@
         box-shadow: inset 0 0 0 25px #53a7ea;
 }
 </style>
+
+<script>
+  var loadFile = function(event) {
+    var output = document.getElementById('output');
+    output.style.height = "300px";
+    output.style.width = "300px";
+    output.style.margin = "20px";
+    output.src = URL.createObjectURL(event.target.files[0]);
+    output.onload = function() {
+      URL.revokeObjectURL(output.src) // free memory
+      
+    }
+  };
+</script>
+
+
+<script src="{{ asset('ckeditor/ckeditor.js') }}"></script>
+<script>
+CKEDITOR.replace( 'SliderName' );
+</script>
+
 
 </html>

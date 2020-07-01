@@ -187,7 +187,7 @@
                                             <tr>
                                                 <td>{{$map->title}}</td>
                                                 <td><img src="{{ 'uploads/slider/'.$map->image }}" alt="Girl in a jacket" width="50" height="50"></td>
-                                                <td><a href="" type="button" class="btn btn-danger">delete</a></td>
+                                                <td><a href="{{route('maprd')}}" type="button" class="btn btn-danger">delete</a></td>
                                                
                                             </tr> 
                                         </tbody>

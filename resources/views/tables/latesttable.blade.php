@@ -189,21 +189,21 @@
                                                 <td>{{$latest->title}}</td>
                                                 <td>{{$latest->paragraph}}</td>
                                                 <td><img src="{{ 'uploads/slider/'.$latest->image }}" alt="Girl in a jacket" width="50" height="50"></td>
-                                                <td><a href="" type="button" class="btn btn-danger">delete</a></td>
+                                                <td><a href="{{route('latestrd')}}" type="button" class="btn btn-danger">delete</a></td>
                                                
                                             </tr> 
                                             <tr>
                                                 <td>{{$latesttwo->title}}</td>
                                                 <td>{{$latesttwo->paragraph}}</td>
                                                 <td><img src="{{ 'uploads/slider/'.$latesttwo->image }}" alt="Girl in a jacket" width="50" height="50"></td>
-                                                <td><a href="" type="button" class="btn btn-danger">delete</a></td>
+                                                <td><a href="{{route('latesttword')}}" type="button" class="btn btn-danger">delete</a></td>
                                                
                                             </tr> 
                                             <tr>
                                                 <td>{{$latestthree->title}}</td>
                                                 <td>{{$latestthree->paragraph}}</td>
                                                 <td><img src="{{ 'uploads/slider/'.$latestthree->image }}" alt="Girl in a jacket" width="50" height="50"></td>
-                                                <td><a href="" type="button" class="btn btn-danger">delete</a></td>
+                                                <td><a href="{{route('latestthreerd')}}" type="button" class="btn btn-danger">delete</a></td>
                                                
                                             </tr> 
                                         </tbody>

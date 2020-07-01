@@ -13,7 +13,7 @@
   
   <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"></script>
-</head>
+
   <link rel="stylesheet" href="http://www.ophthalmichospital.com/style.css" />
   <link rel="stylesheet" href="./mobile-style.css">
 </head>
@@ -195,33 +195,34 @@
      <small class="findi"> <div class="float-left wi"><i class="fa fa-comments"></i> 3 comments</div><div class="float-right vi"><i class="fa fa-calendar"></i>March19,2019</div></small>
       </div>
       </div> </div>
-    <div class="col-xs-12 col-md-6 col-4 col-lg-3 mar parent">
-      <div class="card car vir">
-                <div class="" onclick="">
-      <img class="card-img-top trin cab img-fluid pini quack" src="{{ 'uploads/slider/'.$contwo->image }}" alt="Card image cap" id="new">
-      <div class="card-block child">
-        <h4 class="card-title miup foup pin fin nin cpl">{{$contwo->title}}</h4>
-        <p class="card-text miup dipn pin mrtn">{{$contwo->paragraph}}<br></p>
-        </div>
-        </div>
-      <div class="card-footer mrbn mhcn mkin">
-          <div class="vbg">
-         <small class="findi"> <div class="float-left wi"><i class="fa fa-comments"></i> 3 comments</div><div class="float-right vi"><i class="fa fa-calendar"></i>March19,2019</div></small>
-      </div></div>
-    </div></div>
-    <div class="col-xs-12 col-md-6 col-4 col-lg-3 mar parent">
+      <div class="col-xs-12 col-md-6 col-4 col-lg-3 mar parent">
       <div class="card car vir">
       <div class="" onclick="">
-      <img class="card-img-top carb img-fluid pini" src="{{ 'uploads/slider/'.$conthree->image }}" alt="Card image cap">
+
+      <img class="card-img-top ca img-fluid pini" src="{{ 'uploads/slider/'.$contwo->image }}" alt="Card image cap">
       <div class="card-block child">
-        <h4 class="card-title biup foup pin nin pil cpl">{{$conthree->title}}</h4>
-        <p class="card-text diup pin mrtn">{{$conthree->paragraph}}<br><br><br><br><br></p>
-        </div>
-        </div>
-      <div class="card-footer mrbnn donv">
-          <small class="findi"> <div class="float-left wi"><i class="fa fa-comments"></i> 3 comments</div><div class="float-right vi"><i class="fa fa-calendar"></i>March19,2019</div></small>
+        <h4 class="card-title tiup foup pin liton nin pil cpl">{{$contwo->title}}</h4>
+        <p class="card-text tiup nomi pin mrtn">{{$contwo->paragraph}}<br><br><br><br><br></p>
       </div>
-    </div></div>
+      </div>
+      <div class="card-footer mrbnn donv">
+     <small class="findi"> <div class="float-left wi"><i class="fa fa-comments"></i> 3 comments</div><div class="float-right vi"><i class="fa fa-calendar"></i>March19,2019</div></small>
+      </div>
+      </div> </div>
+      <div class="col-xs-12 col-md-6 col-4 col-lg-3 mar parent">
+      <div class="card car vir">
+      <div class="" onclick="">
+
+      <img class="card-img-top ca img-fluid pini" src="{{ 'uploads/slider/'.$conthree->image }}" alt="Card image cap">
+      <div class="card-block child">
+        <h4 class="card-title tiup foup pin liton nin pil cpl">{{$conthree->title}}</h4>
+        <p class="card-text tiup nomi pin mrtn">{{$conthree->paragraph}}<br><br><br><br><br></p>
+      </div>
+      </div>
+      <div class="card-footer mrbnn donv">
+     <small class="findi"> <div class="float-left wi"><i class="fa fa-comments"></i> 3 comments</div><div class="float-right vi"><i class="fa fa-calendar"></i>March19,2019</div></small>
+      </div>
+      </div> </div>
 </div>
 </div>
 </div>
@@ -879,5 +880,19 @@ var a=$(".ghj").width()+30;
   $(".gilly").removeClass("gillyy");
 });
 </script>
+
+
+
+<style>
+.bgn {
+ background-image: url("{{ 'uploads/slider/'.$appointment->image }}");
+  background-size: 100% 100%;
+ height: 1000px;
+}
+.bgl{
+	background-image: url("{{ 'uploads/slider/'.$map->image }}");
+	height:550px;
+}
+</style>
 
 

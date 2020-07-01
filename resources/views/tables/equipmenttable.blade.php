@@ -187,26 +187,26 @@
                                             <tr>
                                                 <td>{{$equone->title}}</td>
                                                 <td><img src="{{ 'uploads/slider/'.$equone->image }}" alt="Girl in a jacket" width="50" height="50"></td>
-                                                <td><a href="{{route('equonerd')}}" type="button" class="btn btn-danger">delete</a></td>
+                                                <td><a href="{{route('equonerd')}}" type="button" class="btn btn-info">Update</a></td>
                                                
                                             </tr> 
                                             <tr>
                                             <td>{{$equtwo->title}}</td>
                                                 <td><img src="{{ 'uploads/slider/'.$equtwo->image }}" alt="Girl in a jacket" width="50" height="50"></td>
-                                                <td><a href="{{route('equtword')}}" type="button" class="btn btn-danger">delete</a></td>
+                                                <td><a href="{{route('equtword')}}" type="button" class="btn btn-info">Update</a></td>
                                                
                                             </tr> 
                                             <tr>
                                             <td>{{$equthree->title}}</td>
                                                 <td><img src="{{ 'uploads/slider/'.$equthree->image }}" alt="Girl in a jacket" width="50" height="50"></td>
-                                                <td><a href="{{route('equthreerd')}}" type="button" class="btn btn-danger">delete</a></td>
+                                                <td><a href="{{route('equthreerd')}}" type="button" class="btn btn-info">Update</a></td>
                                                
                                             </tr> 
 
                                             <tr>
                                             <td>{{$equfour->title}}</td>
                                                 <td><img src="{{ 'uploads/slider/'.$equfour->image }}" alt="Girl in a jacket" width="50" height="50"></td>
-                                                <td><a href="{{route('equfourrd')}}" type="button" class="btn btn-danger">delete</a></td>
+                                                <td><a href="{{route('equfourrd')}}" type="button" class="btn btn-info">Update</a></td>
                                                
                                             </tr> 
                                         </tbody>

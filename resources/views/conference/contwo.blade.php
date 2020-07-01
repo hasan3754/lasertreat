@@ -31,6 +31,7 @@
     <link href="{{ asset('assets/css/light-bootstrap-dashboard.css?v=2.0.0 ') }}" rel="stylesheet" />
     <!-- CSS Just for demo purpose, don't include it in your project -->
     <link href="{{ asset('assets/css/demo.css') }}" rel="stylesheet" />
+    <script src="{{ asset('ckeditor/ckeditor.js') }}"></script>
 </head>
 
 <body>
@@ -195,7 +196,8 @@
                     </div>
                      <div class="form-group">
                         <label for="exampleFormControlFile1">Upload slider image</label>
-                        <input type="file" class="form-control-file" id="exampleFormControlFile1" name="imagetwo">
+                        <input type="file" class="form-control-file" accept="image/*" onchange="loadFile(event)" id="exampleFormControlFile1" name="imagetwo">
+                        <img id="output"/>
                     </div>
                     <button type="submit" class="btn btn-primary">Submit</button>
                     </form>
@@ -357,3 +359,26 @@
 }
 </style>
 </html>
+
+
+
+
+<script>
+  var loadFile = function(event) {
+    var output = document.getElementById('output');
+    output.style.height = "300px";
+    output.style.width = "300px";
+    output.style.margin = "20px";
+    output.src = URL.createObjectURL(event.target.files[0]);
+    output.onload = function() {
+      URL.revokeObjectURL(output.src) // free memory
+      
+    }
+  };
+</script>
+
+
+
+<script>
+CKEDITOR.replace( 'paragraphtwo' );
+</script>

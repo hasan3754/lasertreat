@@ -52,7 +52,7 @@ class latestController extends Controller
 
         $message="latest card one created successfully";
 
-        return view("latest", compact("message"));
+        return view("latest.latest", compact("message"));
 
     }
 
@@ -91,7 +91,7 @@ class latestController extends Controller
 
         $message="latest card two created successfully";
 
-        return view("latest", compact("message"));
+        return view("latest.latesttwo", compact("message"));
     }
 
 
@@ -131,7 +131,7 @@ class latestController extends Controller
 
         $message="latest card three created successfully";
 
-        return view("latest", compact("message"));
+        return view("latest.latestthree", compact("message"));
 
     }
 }

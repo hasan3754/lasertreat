@@ -174,6 +174,8 @@
                                 <div class="card-header ">
                                     <h4 class="card-title">Striped Table with Hover</h4>
                                     <p class="card-category">Here is a subtitle for this table</p>
+                                    <br>
+                                    <td><a href="" type="button" class="btn btn-info">View conference section</a></td>
                                 </div>
                                 <div class="card-body table-full-width table-responsive">
                                     <table class="table table-hover table-striped">
@@ -187,25 +189,25 @@
                                             <tr>
                                                 <td>{{$treone->title}}</td>
                                                 <td><img src="{{ 'uploads/slider/'.$treone->image }}" alt="Girl in a jacket" width="50" height="50"></td>
-                                                <td><a href="{{route('treonerd')}}" type="button" class="btn btn-danger">delete</a></td>
+                                                <td><a href="{{route('treonerd')}}" type="button" class="btn btn-info">Update</a></td>
                                                
                                             </tr> 
                                             <tr>
                                             <td>{{$tretwo->title}}</td>
                                                 <td><img src="{{ 'uploads/slider/'.$tretwo->image }}" alt="Girl in a jacket" width="50" height="50"></td>
-                                                <td><a href="{{route('tretword')}}" type="button" class="btn btn-danger">delete</a></td>
+                                                <td><a href="{{route('tretword')}}" type="button" class="btn btn-info">Update</a></td>
                                                
                                             </tr> 
                                             <tr>
                                             <td>{{$trethree->title}}</td>
                                                 <td><img src="{{ 'uploads/slider/'.$trethree->image }}" alt="Girl in a jacket" width="50" height="50"></td>
-                                                <td><a href="{{route('trethreerd')}}" type="button" class="btn btn-danger">delete</a></td>
+                                                <td><a href="{{route('trethreerd')}}" type="button" class="btn btn-info">Update</a></td>
                                                
                                             </tr> 
                                             <tr>
                                             <td>{{$trethree->title}}</td>
                                                 <td><img src="{{ 'uploads/slider/'.$trefour->image }}" alt="Girl in a jacket" width="50" height="50"></td>
-                                                <td><a href="{{route('trefourrd')}}" type="button" class="btn btn-danger">delete</a></td>
+                                                <td><a href="{{route('trefourrd')}}" type="button" class="btn btn-info">Update</a></td>
                                                
                                             </tr> 
                                         </tbody>

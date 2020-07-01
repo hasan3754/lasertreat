@@ -188,22 +188,24 @@
                                             <tr>
                                                 <td>{{$conone->title}}</td>
                                                 <td>{{$conone->paragraph}}</td>
-                                                <td><img src="{{ 'uploads/slider/'.$conone->image }}" alt="Girl in a jacket" width="50" height="50"></td>
-                                                <td><a href="{{route('cononerd')}}" type="button" class="btn btn-danger">delete</a></td>
+                                                <td><img src="{{ 'uploads/slider/'.$conone->image}}" alt="Girl in a jacket" width="50" height="50"></td>
+                                                <td><a href="{{route('cononerd')}}" type="button" class="btn btn-info">Update</a></td>
+                                                
+
                                                
                                             </tr> 
                                             <tr>
                                                 <td>{{$contwo->title}}</td>
                                                 <td>{{$contwo->paragraph}}</td>
                                                 <td><img src="{{ 'uploads/slider/'.$contwo->image }}" alt="Girl in a jacket" width="50" height="50"></td>
-                                                <td><a href="{{route('contword')}}" type="button" class="btn btn-danger">delete</a></td>
+                                                <td><a href="{{route('contword')}}" type="button" class="btn btn-info">Update</a></td>
                                                
                                             </tr> 
                                             <tr>
                                                 <td>{{$conthree->title}}</td>
                                                 <td>{{$conthree->paragraph}}</td>
                                                 <td><img src="{{ 'uploads/slider/'.$conthree->image }}" alt="Girl in a jacket" width="50" height="50"></td>
-                                                <td><a href="{{route('conthreerd')}}" type="button" class="btn btn-danger">delete</a></td>
+                                                <td><a href="{{route('conthreerd')}}" type="button" class="btn btn-info">Update</a></td>
                                                
                                             </tr> 
                                         </tbody>

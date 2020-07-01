@@ -5,22 +5,21 @@ use App\slider;
 use App\conone;
 use App\contwo;
 use App\conthree;
-use App\treone;
-use App\tretwo;
-use App\trethree;
-use App\speone;
-use App\spetwo;
-use App\spethree;
-use App\map;
 use App\equone;
 use App\equtwo;
 use App\equthree;
-use App\appointment;
-use App\latest;
-use App\latesttwo;
-use App\latestthree;
-use App\trefour;
 use App\equfour;
+use App\map;
+use App\speone;
+use App\spetwo;
+use App\spethree;
+use App\treone;
+use App\tretwo;
+use App\trethree;
+use App\trefour;
+use App\appointment;
+use Carbon\Carbon;
+use Illuminate\Support\Facades\Redirect;
 
 /*
 |--------------------------------------------------------------------------
@@ -351,20 +350,136 @@ Route::get('/spethreerd', function () {
 
 
 Route::get('/equthreerd', function () {
-    return view('specialists.equthree');
+    return view('equipments.equthree');
 })->name('equthreerd')->middleware('auth');
 
 
 Route::get('/equonerd', function () {
-    return view('specialists.equone');
+    return view('equipments.equone');
 })->name('equonerd')->middleware('auth');
 
 
 Route::get('/equtword', function () {
-    return view('specialists.equtwo');
+    return view('equipments.equtwo');
 })->name('equtword')->middleware('auth');
 
 
 Route::get('/equfourrd', function () {
-    return view('specialists.equfour');
+    return view('equipments.equfour');
 })->name('equfourrd')->middleware('auth');
+
+
+Route::get('/maprd', function () {
+    return view('map');
+})->name('maprd')->middleware('auth');
+
+
+
+Route::get('/latestrd', function () {
+    return view('latest.latest');
+})->name('latestrd')->middleware('auth');
+
+
+
+Route::get('/latesttword', function () {
+    return view('latest.latesttwo');
+})->name('latesttword')->middleware('auth');
+
+
+
+Route::get('/latestthreerd', function () {
+    return view('latest.latestthree');
+})->name('latestthreerd')->middleware('auth');
+
+
+
+Route::get('/cononeshow', function () {
+
+    $conone=conone::latest('created_at')->first();
+
+    return view("show.slider", compact("conone"));
+   
+
+
+
+  
+})->name('cononeshow')->middleware('auth');
+
+
+Route::get('/contwoshow', function () {
+
+    $contwo=contwo::latest('created_at')->first();
+
+    return view("show.contwo", compact("contwo"));
+   
+
+
+
+  
+})->name('contwoshow')->middleware('auth');
+
+
+Route::get('/conthreeshow', function () {
+
+    $conthree=conthree::latest('created_at')->first();
+
+    return view("show.conthree", compact("conthree"));
+   
+
+
+
+  
+})->name('conthreeshow')->middleware('auth');
+
+
+
+
+Route::get('/speoneshow', function () {
+
+    $speone=speone::latest('created_at')->first();
+
+    return view("show.speone", compact("speone"));
+   
+
+
+
+  
+})->name('speoneshow')->middleware('auth');
+
+
+
+
+
+Route::get('/spetwoshow', function () {
+
+    $spetwo=spetwo::latest('created_at')->first();
+
+    return view("show.spetwo", compact("spetwo"));
+   
+
+
+
+  
+})->name('spetwoshow')->middleware('auth');
+
+
+
+Route::get('/treatmentshow', function () {
+
+    $treone=treone::latest('created_at')->first();
+    $tretwo=tretwo::latest('created_at')->first();
+    $trethree=trethree::latest('created_at')->first();
+    $trefour=trefour::latest('created_at')->first();
+
+    return view("show.treatments", compact("treone","tretwo","trethree","trefour"));
+   
+
+
+
+  
+})->name('treatmentshow')->middleware('auth');
+
+
+
+
+

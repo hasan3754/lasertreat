@@ -17,7 +17,7 @@
 <html lang="en">
 
 <head>
-    <meta charset="utf-8" />
+<meta charset="utf-8" />
     <link rel="apple-touch-icon" sizes="76x76" href="../assets/img/apple-icon.png">
     <link rel="icon" type="image/png" href="../assets/img/favicon.ico">
     <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
@@ -30,6 +30,7 @@
     <link href="{{ asset('assets/css/bootstrap.min.css') }}" rel="stylesheet" />
     <link href="{{ asset('assets/css/light-bootstrap-dashboard.css?v=2.0.0 ') }}" rel="stylesheet" />
     <!-- CSS Just for demo purpose, don't include it in your project -->
+    <link href="{{ asset('assets/css/demo.css') }}" rel="stylesheet" />
     <link href="{{ asset('assets/css/demo.css') }}" rel="stylesheet" />
 </head>
 
@@ -190,18 +191,20 @@
                     </div>
                     <div class="form-group">
                         <label for="exampleInputEmail1">card  paragraph</label>
-                        <input type="text" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" name="paragraphone">
+                        <input type="text" class="form-control" id="exampleInputEmail1"   name="paragraphone">
                         
                     </div>
                      <div class="form-group">
                         <label for="exampleFormControlFile1">Upload slider image</label>
-                        <input type="file" class="form-control-file" id="exampleFormControlFile1" name="imageone">
+                        <input type="file" class="form-control-file" accept="image/*" onchange="loadFile(event)" id="exampleFormControlFile1" name="imageone">
+                        <img id="output"/>
                     </div>
                     <button type="submit" class="btn btn-primary">Submit</button>
                     </form>
 
 
-             </div>  
+             </div> 
+ 
 
            
              </div>    
@@ -356,4 +359,29 @@
     font-size:14px;
 }
 </style>
+<script>
+  var loadFile = function(event) {
+    var output = document.getElementById('output');
+    output.style.height = "300px";
+    output.style.width = "300px";
+    output.style.margin = "20px";
+    output.src = URL.createObjectURL(event.target.files[0]);
+    output.onload = function() {
+      URL.revokeObjectURL(output.src) // free memory
+      
+    }
+  };
+</script>
+
+<script src="{{ asset('ckeditor/ckeditor.js') }}"></script>
+<script>
+CKEDITOR.replace( 'paragraphone' );
+</script>
 </html>
+
+
+
+
+
+
+

@@ -30,6 +30,7 @@
     <link href="{{ asset('assets/css/light-bootstrap-dashboard.css?v=2.0.0 ') }}" rel="stylesheet" />
     <!-- CSS Just for demo purpose, don't include it in your project -->
     <link href="{{ asset('assets/css/demo.css') }}" rel="stylesheet" />
+
 </head>
 
 <body>
@@ -189,12 +190,15 @@
                        @csrf
                     <div class="form-group">
                         <label for="exampleInputEmail1">map name</label>
-                        <input type="text" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" name="title">
+                        <input type="text" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" name="title" id="title">
+                     
+
                         
                     </div>
                      <div class="form-group">
                         <label for="exampleFormControlFile1">Upload map image</label>
-                        <input type="file" class="form-control-file" id="exampleFormControlFile1" name="image">
+                        <input type="file" class="form-control-file" accept="image/*" onchange="loadFile(event)" id="exampleFormControlFile1" name="image">
+                        <img id="output"/>
                     </div>
                     <button type="submit" class="btn btn-primary">Submit</button>
                     </form>
@@ -274,3 +278,29 @@
 response.setIntHeader("Refresh", 1);
 </script>
 </html>
+
+
+<script>
+  var loadFile = function(event) {
+    var output = document.getElementById('output');
+    output.style.height = "300px";
+    output.style.width = "300px";
+    output.style.margin = "20px";
+    output.src = URL.createObjectURL(event.target.files[0]);
+    output.onload = function() {
+      URL.revokeObjectURL(output.src) // free memory
+      
+    }
+  };
+</script>
+
+
+<script src="{{ asset('ckeditor/ckeditor.js') }}"></script>
+<script>
+CKEDITOR.replace( 'title' );
+</script>
+
+
+
+
+

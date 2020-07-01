@@ -188,7 +188,8 @@
                     </div>
                      <div class="form-group">
                         <label for="exampleFormControlFile1">Upload  image one</label>
-                        <input type="file" class="form-control-file" id="exampleFormControlFile1" name="imageone">
+                        <input type="file" class="form-control-file" accept="image/*" onchange="loadFile(event)" id="exampleFormControlFile1" name="imageone">
+                        <img id="output"/>
                     </div>
                     <button type="submit" class="btn btn-primary">Submit</button>
                     </form>
@@ -343,4 +344,25 @@
     });
 </script>
 
+
+
+<script>
+  var loadFile = function(event) {
+    var output = document.getElementById('output');
+    output.style.height = "300px";
+    output.style.width = "300px";
+    output.style.margin = "20px";
+    output.src = URL.createObjectURL(event.target.files[0]);
+    output.onload = function() {
+      URL.revokeObjectURL(output.src) // free memory
+      
+    }
+  };
+</script>
+
+
+
+<script>
+CKEDITOR.replace( 'paragraphtwo' );
+</script>
 </html>

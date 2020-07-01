@@ -174,141 +174,137 @@
             <div class="content">
                 <div class="container-fluid">
                 
-                <div class="row bgd npm">
-  <div class="marin">TREATMENTS</div>
+                <div class="row faltu npm">
+  <div class="marin">EQUIPMENTS</div>
 </div>
-	<div class="row bgp sholin lk">
+	<div class="row bg3 sholin nimu">
 <div class="container">
-<!-- Page Content -->
-<div class="container">
-        <div class="rectangle">
+
+<div class="rectangleee">
         <div class="portfolio-item row no-gutters">
-            <div class="item selfie col-lg-3 col-md-3 col-3 col-sm  nun">
+            <div class="item selfie col-lg-3 col-md-3 col-3 col-sm nun">
+           
                <a href="http://www.ophthalmichospital.com/b.jpg" class="fancylight popup-btn" data-fancybox-group="light"> 
                <div class="zoom">
-               <img class="img-fluid llp" src="{{ 'uploads/slider/'.$treone->image }}" alt="">
-               </div>
+               <img class="img-fluid" src="{{ 'uploads/slider/'.$equone->image }}" alt=""></div>
                </a>
              
              
             </div>
             <div class="item gts col-lg-3 col-md-3 col-3 col-sm">
-             <div class="cardd">
-                 <div class="card__content">    
+                    <div class="carddvione">
+                <div class="card__contentvione"> 
                <a href="http://www.ophthalmichospital.com/e.jpg" class="fancylight popup-btn" data-fancybox-group="light"> 
                <img class="img-fluid" src="http://www.ophthalmichospital.com/e.jpg" alt="">
                </a>
-                  <div class="centered "><b><p class="t">BOTOXÀ®</p></b></div>
-                  </div>
-                 
-                 
-                 <div class="card__reveal card__reveal--up xlz poi">    
+                  <div class="centered"><p class="t">INFO</p></div>
+            </div>
+            
+                           <div class="card__reveal card__reveal--up xlz">    
                <a href="http://www.ophthalmichospital.com/dd.jpg" class="fancylight popup-btn" data-fancybox-group="light"> 
                <img class="img-fluid" src="http://www.ophthalmichospital.com/dd.jpg" alt="">
                </a>
-                  <div class="centered"><b><p class="t tn kinh nl">BOTOXÀ®</p></b>                <br><br>  <img  class="img-fluid centered noli binh" style="display: none" src="http://www.ophthalmichospital.com/arrio.png" alt=""></div>
+                  <div class="centered"><b><p class="t tn kinh nl">INFO</p></b>                <br><br>  <img  class="img-fluid centered noli binh"  src="http://www.ophthalmichospital.com/arrio.png" alt=""></div>
                   </div>
-
-                  
-                  </div>
+            
+            
+            
+            </div>
+            
+            
+            
+            
             </div>
             <div class="item selfie col-lg-3 col-md-3 col-3 col-sm">
                <a href="http://www.ophthalmichospital.com/d.jpg" class="fancylight popup-btn" data-fancybox-group="light">
                    <div class="zoom">
-               <img class="img-fluid llp" src="{{ 'uploads/slider/'.$tretwo->image }}" alt="">
+               <img class="img-fluid" src="{{ 'uploads/slider/'.$equtwo->image }}" alt="">
                </div>
                </a>
 
             </div>
             <div class="item gts col-lg-3 col-md-3 col-3 col-sm">
-                <div class="carddone">
-                <div class="card__contentone"> 
+                                    <div class="carddvitwo">
+                <div class="card__contentvitwo"> 
                <a href="http://www.ophthalmichospital.com/e.jpg" class="fancylight popup-btn" data-fancybox-group="light">
                <img class="img-fluid" src="http://www.ophthalmichospital.com/e.jpg" alt="">
                </a>
-                                  <div class="centered"><p class="t">FRACTIONAL<br>LASER CO2</p></div>
+                                  <div class="centered"><p class="t">INFO</p></div>
             </div>
-                <div class="card__reveal card__reveal--up xlz poi">    
+                           <div class="card__reveal card__reveal--up xlz poi">    
                <a href="http://www.ophthalmichospital.com/dd.jpg" class="fancylight popup-btn" data-fancybox-group="light"> 
                <img class="img-fluid" src="http://www.ophthalmichospital.com/dd.jpg" alt="">
                </a>
-                  <div class="centered"><b><p class="t kinh nl">FRACTIONAL<br>LASER CO2</p></b>                <br><br>  <img  class="img-fluid centered noli binh"  src="http://www.ophthalmichospital.com/arrio.png" alt=""></div>
+                  <div class="centered"><b><p class="t tn kinh nl">INFO</p></b>                <br><br>  <img  class="img-fluid centered noli binh"  src="http://www.ophthalmichospital.com/arrio.png" alt=""></div>
                   </div>
             
             
-            </div>
-            </div>
-            </div>
+            
+            </div></div></div>
             <div class="vai">
           <div class="portfolio-item row no-gutters">
                         <div class="item selfie col-lg-3 col-md-3 col-3 col-sm nun">
-                <div class="carddtwo">
-                <div class="card__contenttwo"> 
+                 <div class="carddvithree nibbi">
+                <div class="card__contentvithree"> 
                <a href="http://www.ophthalmichospital.com/e.jpg" class="fancylight popup-btn" data-fancybox-group="light"> 
-               <div class="zoom">
                <img class="img-fluid" src="http://www.ophthalmichospital.com/e.jpg" alt="">
-               </div>
                </a>
-               <div class="centered"><p class="t">PRP BY ECLIPSE</p></div>
+                <div class="centered"><p class="t">INFO</p></div>
                  
             </div>
-            
-               <div class="card__reveal card__reveal--up xlz">    
+                           <div class="card__reveal card__reveal--up xlz poi">    
                <a href="http://www.ophthalmichospital.com/dd.jpg" class="fancylight popup-btn" data-fancybox-group="light"> 
                <img class="img-fluid" src="http://www.ophthalmichospital.com/dd.jpg" alt="">
                </a>
-                  <div class="centered"><b><p class="t kinh nl">PRP BY ECLIPSE</p></b>                <br><br>  <img  class="img-fluid centered noli binh"  src="http://www.ophthalmichospital.com/arrio.png" alt=""></div>
+                  <div class="centered"><b><p class="t tn kinh nl">INFO</p></b>                <br><br>  <img  class="img-fluid centered noli binh"  src="http://www.ophthalmichospital.com/arrio.png" alt=""></div>
                   </div>
-            </div>
             
-            
-            </div>
-            <div class="item gts col-lg-3 col-md-3 col-3 col-sm">
+            </div></div>
+            <div class="item gts col-lg-3 col-md-3 col-3 col-sm nibbii">
+                <div class="nibbi">
                <a href="http://www.ophthalmichospital.com/c.jpg" class="fancylight popup-btn" data-fancybox-group="light"> 
                <div class="zoom">
-               <img class="img-fluid llp" src="{{ 'uploads/slider/'.$trethree->image }}" alt="">
+               <img class="img-fluid" src="{{ 'uploads/slider/'.$equthree->image }}" alt="">
                </div>
                </a>
-                 
+                 </div>
             </div>
-            <div class="item selfie col-lg-3 col-md-3 col-3 col-sm">
-        <div class="carddthree">
-                <div class="card__contentthree"> 
-               <a href="http://www.ophthalmichospital.com/e.jpg" class="fancylight popup-btn" data-fancybox-group="light"> 
-               <img class="img-fluid" src="http://www.ophthalmichospital.com/e.jpg" alt="">
+            <div class="item selfie col-lg-3 col-md-3 col-3 col-sm nibbi">
+                                                      <div class="carddvifour">
+                <div class="card__contentvifour nibbii"> 
+               <a href="http://www.ophthalmichospital.com/e.jpg"  class="fancylight popup-btn" data-fancybox-group="light">
+               <img class="img-fluid" src="http://www.ophthalmichospital.com/e.jpg"  alt="">
                </a>
-               <div class="centered"><p class="t tn">BODY SHAPING,<br>
-  BY ZERONAÀ®</p></div>
-                 
+                <div class="centered"><p class="t">INFO</p></div>
             </div>
-            
-               <div class="card__reveal card__reveal--up xlz">    
+        <div class="card__reveal card__reveal--up xlz poi">    
                <a href="http://www.ophthalmichospital.com/dd.jpg" class="fancylight popup-btn" data-fancybox-group="light"> 
                <img class="img-fluid" src="http://www.ophthalmichospital.com/dd.jpg" alt="">
                </a>
-                  <div class="centered"><b><p class="t tn kinh nl">BODY SHAPING,<br>
-  BY ZERONAÀ®</p></b>                <br><br>  <img  class="img-fluid centered noli binh"  src="http://www.ophthalmichospital.com/arrio.png" alt=""></div>
+                  <div class="centered"><b><p class="t tn kinh nl">INFO</p></b>                <br><br>  <img  class="img-fluid centered noli binh"  src="http://www.ophthalmichospital.com/arrio.png" alt=""></div>
                   </div>
-            </div>
             
-            </div>
+            
+            
+            
+            
+            
+            </div></div>
             <div class="item gts col-lg-3 col-md-3 col-3 col-sm">
+                <div class="nibbi">
                <a href="http://www.ophthalmichospital.com/a.jpg"  class="fancylight popup-btn" data-fancybox-group="light">
                    <div class="zoom">
-               <img class="img-fluid llp" src="{{ 'uploads/slider/'.$trefour->image }}" alt="">
-               </div>
+               <img class="img-fluid" src="{{ 'uploads/slider/'.$equfour->image }}" alt=""></div>
                </a>
                  <div class="centered"></div>
             </div>
+            </div>
+         </div>
          </div>
 
 </div>
-         </div>
-         
-         </div>
- 
-  </div>
-
+</div>
+</div>
 
 </div>
 </div>

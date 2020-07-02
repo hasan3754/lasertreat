@@ -177,6 +177,9 @@
                 </div>
 
             @endif    
+            @foreach ($errors->all() as $error)
+      <div>{{ $error }}</div>
+  @endforeach
 
                 <div class="container-fluid">
                 <h3 >Equipment image one</h3>
@@ -189,7 +192,7 @@
                     </div>
                      <div class="form-group">
                         <label for="exampleFormControlFile1">Upload  image one</label>
-                        <input type="file" class="form-control-file" id="exampleFormControlFile1" accept="image/*" onchange="loadFile(event)" name="imagethree">
+                        <input type="file" class="form-control-file" id="exampleFormControlFile1" accept="image/*" onchange="loadFile(event)" name="imageone">
                         <img id="output"/>
                     </div>
                     <button type="submit" class="btn btn-primary">Submit</button>
@@ -355,10 +358,4 @@
       
     }
   };
-</script>
-
-
-
-<script>
-CKEDITOR.replace( 'paragraphtwo' );
 </script>

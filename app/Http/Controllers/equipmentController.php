@@ -49,7 +49,7 @@ class equipmentController extends Controller
 
         $message="Equipment image one created successfully";
 
-        return view("equipments", compact("message"));
+        return view("equipments.equone", compact("message"));
 
     }
 
@@ -87,7 +87,7 @@ class equipmentController extends Controller
 
         $message="Equipment image two created successfully";
 
-        return view("equipments", compact("message"));
+        return view("equipments.equtwo", compact("message"));
 
     }
 
@@ -126,7 +126,7 @@ class equipmentController extends Controller
 
         $message="Equipment image three created successfully";
 
-        return view("equipments", compact("message"));
+        return view("equipments.equthree", compact("message"));
 
     }
 
@@ -160,6 +160,6 @@ class equipmentController extends Controller
       
         $message="Equipment image four created successfully";
 
-        return view("equipments", compact("message"));
+        return view("equipments.equfour", compact("message"));
     }
 }

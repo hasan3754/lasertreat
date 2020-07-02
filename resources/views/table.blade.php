@@ -43,7 +43,7 @@
             <div class="sidebar-wrapper">
                 <div class="logo">
                     <a href="http://www.creative-tim.com" class="simple-text">
-                        Creative Tim
+                        Laser Treat
                     </a>
                 </div>
                 <ul class="nav">

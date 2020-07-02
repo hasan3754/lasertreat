@@ -47,13 +47,13 @@
                     </a>
                 </div>
                 <ul class="nav">
-                    <li class="nav-item active">
+                    <li>
                         <a class="nav-link" href="{{route('dashboard')}}">
                             <i class="nc-icon nc-chart-pie-35"></i>
                             <p>Main slider</p>
                         </a>
                     </li>
-                    <li>
+                    <li class="nav-item active">
                         <a class="nav-link" href="{{route('conference')}}">
                             <i class="nc-icon nc-circle-09"></i>
                             <p>Conference</p>
@@ -189,7 +189,7 @@
                                                 <td>{{$conone->title}}</td>
                                                 <td>{{$conone->paragraph}}</td>
                                                 <td><img src="{{ 'uploads/slider/'.$conone->image}}" alt="Girl in a jacket" width="50" height="50"></td>
-                                                <td><a href="{{route('cononerd')}}" type="button" class="btn btn-info">Update</a></td>
+                                                <td><a href="{{route('cononerd')}}" type="button" class="btn btn-info">Update</a><a href="{{route('cononeshow')}}" type="button" class="btn btn-info">View</a></td>
                                                 
 
                                                
@@ -198,14 +198,14 @@
                                                 <td>{{$contwo->title}}</td>
                                                 <td>{{$contwo->paragraph}}</td>
                                                 <td><img src="{{ 'uploads/slider/'.$contwo->image }}" alt="Girl in a jacket" width="50" height="50"></td>
-                                                <td><a href="{{route('contword')}}" type="button" class="btn btn-info">Update</a></td>
+                                                <td><a href="{{route('contword')}}" type="button" class="btn btn-info">Update</a><a href="{{route('contwoshow')}}" type="button" class="btn btn-info">View</a></td>
                                                
                                             </tr> 
                                             <tr>
                                                 <td>{{$conthree->title}}</td>
                                                 <td>{{$conthree->paragraph}}</td>
                                                 <td><img src="{{ 'uploads/slider/'.$conthree->image }}" alt="Girl in a jacket" width="50" height="50"></td>
-                                                <td><a href="{{route('conthreerd')}}" type="button" class="btn btn-info">Update</a></td>
+                                                <td><a href="{{route('conthreerd')}}" type="button" class="btn btn-info">Update</a><a href="{{route('conthreeshow')}}" type="button" class="btn btn-info">View</a></td>
                                                
                                             </tr> 
                                         </tbody>

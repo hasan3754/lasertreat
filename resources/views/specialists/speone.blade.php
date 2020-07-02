@@ -183,6 +183,11 @@
 
                 <div class="container-fluid">
                 <h3 >Specialist card one</h3>
+            
+   @foreach ($errors->all() as $error)
+      <div>{{ $error }}</div>
+  @endforeach
+
                 <form method="post" action="{{ route('specialist.storeone') }}" enctype="multipart/form-data">
                        @csrf
                     <div class="form-group">
@@ -192,7 +197,7 @@
                     </div>
                     <div class="form-group">
                         <label for="exampleInputEmail1">card  paragraph</label>
-                        <input type="text" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" name="paragraphone">
+                        <input type="text" class="form-control" id="basic-example" aria-describedby="emailHelp" name="paragraphone">
                         
                     </div>
                      <div class="form-group">
@@ -362,9 +367,26 @@
     }
   };
 </script>
-<script src="{{ asset('ckeditor/ckeditor.js') }}"></script>
+<script src="https://cdn.tiny.cloud/1/qagffr3pkuv17a8on1afax661irst1hbr4e6tbv888sz91jc/tinymce/5/tinymce.min.js"></script>
 
 
 <script>
-CKEDITOR.replace( 'paragraphone' );
+tinymce.init({
+  selector: 'input#basic-example',
+  height: 300,
+  menubar: false,
+  plugins: [
+    'advlist autolink lists link image charmap print preview anchor',
+    'searchreplace visualblocks code fullscreen',
+    'insertdatetime media table paste code help wordcount'
+  ],
+  toolbar: 'undo redo | formatselect | ' +
+  'bold italic backcolor | alignleft aligncenter ' +
+  'alignright alignjustify | bullist numlist outdent indent | ' +
+  'removeformat | help',
+  content_css: '//www.tiny.cloud/css/codepen.min.css'
+});
+
 </script>
+
+

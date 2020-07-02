@@ -359,6 +359,3 @@
 
 
 
-<script>
-CKEDITOR.replace( 'paragraphtwo' );
-</script>

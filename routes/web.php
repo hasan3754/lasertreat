@@ -18,6 +18,9 @@ use App\tretwo;
 use App\trethree;
 use App\trefour;
 use App\appointment;
+use App\latest;
+use App\latesttwo;
+use App\latestthree;
 use Carbon\Carbon;
 use Illuminate\Support\Facades\Redirect;
 
@@ -397,7 +400,7 @@ Route::get('/cononeshow', function () {
 
     $conone=conone::latest('created_at')->first();
 
-    return view("show.slider", compact("conone"));
+    return view("show.conone", compact("conone"));
    
 
 
@@ -462,6 +465,18 @@ Route::get('/spetwoshow', function () {
   
 })->name('spetwoshow')->middleware('auth');
 
+Route::get('/spethreeshow', function () {
+
+    $spethree=spethree::latest('created_at')->first();
+
+    return view("show.spethree", compact("spethree"));
+   
+
+
+
+  
+})->name('spethreeshow')->middleware('auth');
+
 
 
 Route::get('/treatmentshow', function () {
@@ -478,6 +493,66 @@ Route::get('/treatmentshow', function () {
 
   
 })->name('treatmentshow')->middleware('auth');
+
+
+Route::get('/equipmentshow', function () {
+
+    $equone=equone::latest('created_at')->first();
+    $equtwo=equtwo::latest('created_at')->first();
+    $equthree=equthree::latest('created_at')->first();
+    $equfour=equfour::latest('created_at')->first();
+
+    return view("show.equipments", compact("equone","equtwo","equthree","equfour"));
+   
+
+
+
+  
+})->name('equipmentshow')->middleware('auth');
+
+
+Route::get('/mapshow', function () {
+
+
+    $map=map::latest('created_at')->first();
+
+    return view("show.map", compact("map"));
+   
+
+
+
+  
+})->name('mapshow')->middleware('auth');
+
+
+Route::get('/appointmentshow', function () {
+
+
+    $appointment=appointment::latest('created_at')->first();
+
+    return view("show.appointment", compact("appointment"));
+   
+
+
+
+  
+})->name('appointmentshow')->middleware('auth');
+
+
+
+Route::get('/latestshow', function () {
+
+    $latest=latest::latest('created_at')->first();
+    $latesttwo=latesttwo::latest('created_at')->first();
+    $latestthree=latestthree::latest('created_at')->first();
+
+    return view("show.latest", compact("latest","latesttwo","latestthree"));
+   
+
+
+
+  
+})->name('latestshow')->middleware('auth');
 
 
 

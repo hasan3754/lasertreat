@@ -81,8 +81,8 @@
     -->
             <div class="sidebar-wrapper">
                 <div class="logo">
-                    <a href="http://www.creative-tim.com" class="simple-text">
-                        Creative Tim
+                <a href="http://www.lasertreat.com" class="simple-text">
+                    Laser Treat
                     </a>
                 </div>
                 <ul class="nav">
@@ -104,7 +104,7 @@
                             <p>Treatments</p>
                         </a>
                     </li>
-                    <li>
+                    <li class="activee">
                         <a class="nav-link" href="{{route('specialist')}}">
                             <i class="nc-icon nc-paper-2"></i>
                             <p>Specialists</p>
@@ -221,10 +221,10 @@
       <div class="card car vir">
       <div class="" onclick="">
 
-      <img class="card-img-top ca img-fluid pini" src="{{ 'uploads/slider/'.$contwo->image }}" alt="Card image cap">
+      <img class="card-img-top ca img-fluid pini" src="{{ 'uploads/slider/'.$spethree->image }}" alt="Card image cap">
       <div class="card-block child">
-        <h4 class="card-title tiup foup pin liton nin pil cpl">{{$contwo->title}}</h4>
-        <p class="card-text tiup nomi pin mrtn">{{$contwo->paragraph}}<br><br><br><br><br></p>
+        <h4 class="card-title tiup foup pin liton nin pil cpl">{{$spethree->title}}</h4>
+        <p class="card-text tiup nomi pin mrtn">{{$spethree->paragraph}}<br><br><br><br><br></p>
       </div>
       </div>
       <div class="card-footer mrbnn donv">
@@ -315,5 +315,9 @@ response.setIntHeader("Refresh", 1);
 
 
 
+<style>
+
+.activee{background-color:#b194e4; width:200px; transition: all 0.5s ease 0s; padding-left:-10px;}
+</style>
 
 

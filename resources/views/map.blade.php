@@ -295,10 +295,6 @@ response.setIntHeader("Refresh", 1);
 </script>
 
 
-<script src="{{ asset('ckeditor/ckeditor.js') }}"></script>
-<script>
-CKEDITOR.replace( 'title' );
-</script>
 
 
 

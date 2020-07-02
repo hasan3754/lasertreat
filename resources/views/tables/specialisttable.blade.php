@@ -47,7 +47,7 @@
                     </a>
                 </div>
                 <ul class="nav">
-                    <li class="nav-item active">
+                    <li >
                         <a class="nav-link" href="{{route('dashboard')}}">
                             <i class="nc-icon nc-chart-pie-35"></i>
                             <p>Main slider</p>
@@ -65,7 +65,7 @@
                             <p>Treatments</p>
                         </a>
                     </li>
-                    <li>
+                    <li class="nav-item active">
                         <a class="nav-link" href="{{route('specialist')}}">
                             <i class="nc-icon nc-paper-2"></i>
                             <p>Specialists</p>
@@ -189,21 +189,21 @@
                                                 <td>{{$speone->title}}</td>
                                                 <td>{{$speone->paragraph}}</td>
                                                 <td><img src="{{ 'uploads/slider/'.$speone->image }}" alt="Girl in a jacket" width="50" height="50"></td>
-                                                <td><a href="{{route('speonerd')}}" type="button" class="btn btn-info">delete</a><a href="" type="button" class="btn btn-info">view</a></td>
+                                                <td><a href="{{route('speonerd')}}" type="button" class="btn btn-info">delete</a><a href="{{route('speoneshow')}}" type="button" class="btn btn-info">view</a></td>
                                                
                                             </tr> 
                                             <tr>
                                                 <td>{{$spetwo->title}}</td>
                                                 <td>{{$spetwo->paragraph}}</td>
                                                 <td><img src="{{ 'uploads/slider/'.$spetwo->image }}" alt="Girl in a jacket" width="50" height="50"></td>
-                                                <td><a href="{{route('spetword')}}" type="button" class="btn btn-info">delete</a><a href="" type="button" class="btn btn-info">view</a></td>
+                                                <td><a href="{{route('spetword')}}" type="button" class="btn btn-info">delete</a><a href="{{route('spetwoshow')}}" type="button" class="btn btn-info">view</a></td>
                                                
                                             </tr> 
                                             <tr>
                                                 <td>{{$spethree->title}}</td>
                                                 <td>{{$spethree->paragraph}}</td>
                                                 <td><img src="{{ 'uploads/slider/'.$spethree->image }}" alt="Girl in a jacket" width="50" height="50"></td>
-                                                <td><a href="{{route('spethreerd')}}" type="button" class="btn btn-info">delete</a><a href="" type="button" class="btn btn-info">view</a></td>
+                                                <td><a href="{{route('spethreerd')}}" type="button" class="btn btn-info">delete</a><a href="{{route('spethreeshow')}}" type="button" class="btn btn-info">view</a></td>
                                                
                                             </tr> 
                                         </tbody>

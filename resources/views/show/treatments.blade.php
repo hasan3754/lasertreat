@@ -17,7 +17,7 @@
     <link rel="apple-touch-icon" sizes="76x76" href="../assets/img/apple-icon.png">
     <link rel="icon" type="image/png" href="../assets/img/favicon.ico">
     <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
-    <title>Light Bootstrap Dashboard - Free Bootstrap 4 Admin Dashboard by Creative Tim</title>
+    <title>Laser Treat Dashboard</title>
     <meta content='width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0, shrink-to-fit=no' name='viewport' />
     <!--     Fonts and icons     -->
     <link href="https://fonts.googleapis.com/css?family=Montserrat:400,700,200" rel="stylesheet" />
@@ -45,26 +45,26 @@
 
         Tip 2: you can also add an image using data-image tag
     -->
-            <div class="sidebar-wrapper">
+    <div class="sidebar-wrapper">
                 <div class="logo">
-                    <a href="http://www.creative-tim.com" class="simple-text">
-                        Creative Tim
+                <a href="http://www.lasertreat.com" class="simple-text">
+                    Laser Treat
                     </a>
                 </div>
                 <ul class="nav">
-                    <li class="nav-item">
+                    <li >
                         <a class="nav-link" href="{{route('dashboard')}}">
                             <i class="nc-icon nc-chart-pie-35"></i>
                             <p>Main slider</p>
                         </a>
                     </li>
-                    <li>
+                    <li class="activee">
                         <a class="nav-link" href="{{route('conference')}}">
                             <i class="nc-icon nc-circle-09"></i>
                             <p>Conference</p>
                         </a>
                     </li>
-                    <li>
+                    <li class="activee">
                         <a class="nav-link" href="{{route('treatments')}}">
                             <i class="nc-icon nc-notes"></i>
                             <p>Treatments</p>
@@ -596,4 +596,8 @@ var a=$(".ghj").width()+30;
 
 
 
+<style>
+
+.activee{background-color:#b194e4; width:200px; transition: all 0.5s ease 0s;}
+</style>
 

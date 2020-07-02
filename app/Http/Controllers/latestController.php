@@ -108,7 +108,7 @@ class latestController extends Controller
             'imagethree' => 'required|mimes:jpeg,jpg,bmp,png',
         ]);
         $image = $request->file('imagethree');
-        $slug = str_slug($request->titletwo);
+        $slug = str_slug($request->titlethree);
         if (isset($image))
         {
             $currentDate = Carbon::now()->toDateString();
@@ -127,7 +127,6 @@ class latestController extends Controller
         $slider->paragraph = $request->paragraphthree;
         $slider->image = $imagename;
         $slider->save();
-
 
         $message="latest card three created successfully";
 

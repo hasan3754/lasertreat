@@ -47,7 +47,7 @@
                     </a>
                 </div>
                 <ul class="nav">
-                    <li class="nav-item active">
+                    <li >
                         <a class="nav-link" href="{{route('dashboard')}}">
                             <i class="nc-icon nc-chart-pie-35"></i>
                             <p>Main slider</p>
@@ -59,7 +59,7 @@
                             <p>Conference</p>
                         </a>
                     </li>
-                    <li>
+                    <li class="nav-item active">
                         <a class="nav-link" href="{{route('treatments')}}">
                             <i class="nc-icon nc-notes"></i>
                             <p>Treatments</p>
@@ -175,7 +175,7 @@
                                     <h4 class="card-title">Striped Table with Hover</h4>
                                     <p class="card-category">Here is a subtitle for this table</p>
                                     <br>
-                                    <td><a href="" type="button" class="btn btn-info">View conference section</a></td>
+                                    <td><a href="{{route('treatmentshow')}}" type="button" class="btn btn-info">View Treatment section</a></td>
                                 </div>
                                 <div class="card-body table-full-width table-responsive">
                                     <table class="table table-hover table-striped">
